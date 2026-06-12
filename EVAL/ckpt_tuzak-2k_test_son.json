@@ -1,0 +1,1002 @@
+[
+  {
+    "run_name": "tuzak-2k",
+    "idx": 0,
+    "question": "Bir bornoz için 2 cıvata mavi elyaf ve bunun yarısı kadar beyaz elyaf gerekir. Toplamda kaç cıvata gerekiyor?",
+    "ground_truth": "3",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Mavi elyaf miktarı:** Soruda doğrudan 2 cıvata mavi elyaf gerektiği belirtilmiştir.\n2.  **Beyaz elyaf miktarı:** Beyaz elyaf miktarı, mavi elyaf miktarının yarısıdır.\n    *   Beyaz elyaf = 2 / 2 = 1 cıvata.\n3.  **Toplam elyaf miktarı:** Mavi ve beyaz elyaf miktarlarını toplayarak toplamı buluruz.\n    *   Toplam = 2 (mavi) + 1 (beyaz) = 3 cıvata.\n\n#### 3",
+    "extracted": "3",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 1,
+    "question": "Josh bir evi tersine çevirmeyi denemeye karar verir. 80.000 dolara bir ev satın alıyor ve ardından 50.000 dolarını onarımlara yatırıyor. Bu da evin değerini %150 artırdı. Ne kadar kar elde etti?",
+    "ground_truth": "70000",
+    "raw_output": "Josh'un karını bulmak için adım adım ilerleyelim:\n\n1.  **Başlangıç Değeri:** Josh evi 80.000 dolara satın aldı.\n2.  **Onarım Maliyeti:** 50.000 dolarını onarımlara harcadı.\n3.  **Yatırım Sonrası Değer:** Bu onarım maliyeti, evin değerini %150 artırdı.\n    *   Artış miktarı: 50.000 doların %150'si = 50.000 * 1.5 = 75.000 dolar.\n    *   Yeni Değer: Başlangıç değeri + Artış miktarı = 80.000 + 75.000 = 155.000 dolar.\n4.  **Kar Hesabı:** Kar, satış fiyatı ile satın alma fiyatı arasındaki farktır.\n    *   Kar = 155.000 - 80.000 = 75.000 dolar.\n\n#### 75000",
+    "extracted": "75000",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 2,
+    "question": "James haftada 3 kez 3 sprint koşmaya karar verir. Her sprintte 60 metre koşuyor. Haftada toplam kaç metre koşuyor?",
+    "ground_truth": "540",
+    "raw_output": "James'in haftalık koşu mesafesini bulmak için verilen bilgileri kullanabiliriz:\n\n1.  **Haftalık sprint sayısı:** James haftada 3 kez sprint koşuyor.\n2.  **Sprint başına mesafe:** Her sprintte 60 metre koşuyor.\n\nÖnce bir sprintin toplam mesafesini bulalım:\n3 sprint × 60 metre/sprint = 180 metre\n\nSonra haftalık toplam mesafeyi bulalım:\n1 sprint (180 metre) × 3 sprint = 540 metre\n\nJames haftada toplam 540 metre koşuyor.\n\n#### 540",
+    "extracted": "540",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 3,
+    "question": "Wendi her gün tavuklarının her birine, sağlıklı kalmalarına yardımcı olmak için tohumlar, yemek kurtları ve sebzeler içeren üç bardak karışık tavuk yemi veriyor. Tavuklara yemlerini üç ayrı öğünde veriyor. Sabahları tavuk sürüsüne 15 bardak yem veriyor. Öğleden sonra tavuklarına 25 bardak daha yem veriyor. Wendi'nin sürüsünün büyüklüğü 20 tavuk ise günün son öğününde tavuklarına kaç bardak yem vermesi gerekir?",
+    "ground_truth": "20",
+    "raw_output": "Wendi'nin tavuklarına günde toplam kaç bardak yem verdiğini bulmak için sabah ve öğleden sonra verilen bardak sayılarını toplarız:\n\n15 (sabah) + 25 (öğleden sonra) = 40 bardak\n\nWendi'nin her gün tavuklarının her birine 3 bardak yem verdiğini biliyoruz. Sürüsünün 20 tavuğu olduğuna göre, günde toplam kaç bardak yem gerektiğini hesaplayabiliriz:\n\n20 (tavuk sayısı) × 3 (tavuk başına bardak sayısı) = 60 bardak\n\nGünde toplam 60 bardak yem gerektiği ve sabahla öğleden sonra 40 bardak verildiği için, günün son öğününde vermesi gereken bardak sayısını bulmak için toplamı çıkarırız:\n\n60 (toplam) - 40 (verilen) = 20 bardak\n\n#### 20",
+    "extracted": "20",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 4,
+    "question": "Kylar yeni dairesine gözlük almak için mağazaya gitti. Bir bardağın maliyeti 5 dolardır, ancak her ikinci bardağın maliyeti fiyatın yalnızca %60'ıdır. Kylar 16 bardak almak istiyor. Bunlar için ne kadar ödemesi gerekiyor?",
+    "ground_truth": "64",
+    "raw_output": "Ödeme yaparken, Kylar'ın aldığı bardakların yarısını normal fiyatla, diğer yarısını ise indirimli fiyatla aldığını göz önünde bulundurmalıyız.\n\n1.  **Toplam Bardak Sayısı:** 16 bardak\n2.  **İndirimli Fiyatlı Bardak Sayısı:** 16 bardağın yarısı, yani 8 bardak.\n3.  **Normal Fiyatlı Bardak Sayısı:** 16 bardağın diğer yarısı, yani 8 bardak.\n4.  **İndirimli Fiyat:** Bir bardağın normal fiyatının %60'ı, yani 5 * 0.60 = 3 dolar.\n5.  **Toplam Maliyet:**\n    *   İndirimli 8 bardak: 8 * 3 = 24 dolar\n    *   Normal fiyatlı 8 bardak: 8 * 5 = 40 dolar\n    *   Toplam: 24 + 40 = 64 dolar\n\n#### 64",
+    "extracted": "64",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 5,
+    "question": "Toulouse'un Charleston'un iki katı kadar koyunu var. Charleston'un Seattle'ın 4 katı kadar koyunu var. Seattle'ın 20 koyunu varsa Toulouse, Charleston ve Seattle'ın toplam kaç koyunu vardır?",
+    "ground_truth": "260",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Seattle'ın koyun sayısı:** 20\n2.  **Charleston'ın koyun sayısı:** Charleston, Seattle'ın 4 katı kadar koyunu var.\n    *   $20 \\times 4 = 80$ koyun\n3.  **Toulouse'un koyun sayısı:** Toulouse, Charleston'ın iki katı kadar koyunu var.\n    *   $80 \\times 2 = 160$ koyun\n4.  **Toplam koyun sayısı:** Toulouse, Charleston ve Seattle'ın koyun sayılarını toplayalım.\n    *   $160 + 80 + 20 = 260$\n\n#### 260",
+    "extracted": "260",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 6,
+    "question": "Carla 200 GB'lık bir dosya indiriyor. Normalde dakikada 2 GB indirebilir, ancak indirme işleminin %40'ında Windows, güncellemeleri yüklemek için yeniden başlatmayı zorlar ve bu da 20 dakika sürer. Daha sonra Carla'nın indirme işlemini baştan başlatması gerekir. Dosyayı indirmek ne kadar yük gerektirir?",
+    "ground_truth": "160",
+    "raw_output": "Dosyanın indirme süresini hesaplamak için iki aşamayı ele almalıyız:\n\n1.  **İlk Başlatma Süresi:**\n    *   Dosya boyutu: 200 GB\n    *   İndirme hızı: 2 GB/dakika\n    *   Süre: 200 / 2 = 100 dakika\n\n2.  **İlk Başlatmadaki Bozulma Süresi:**\n    *   Bozulma oranı: %40\n    *   Bozulma süresi: 100 dakika * 0.40 = 40 dakika\n    *   Bu süre boyunca indirme işlemi durur.\n\n3.  **İkinci Başlatma Süresi:**\n    *   Dosya yeniden başlatılır, bu yüzden indirme işlemi tekrar başlar.\n    *   Süre: 200 / 2 = 100 dakika\n\n4.  **Toplam Süre:**\n    *   Toplam = (İlk Başlatma Süresi) + (İlk Başlatmadaki Bozulma Süresi) + (İkinci Başlatma Süresi)\n    *   Toplam = 100 + 40 + 100 = 240 dakika\n\n#### 240",
+    "extracted": "240",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 7,
+    "question": "John 3 saat boyunca saatte 60 mil hızla araba kullanıyor ve sonra geri dönüyor çünkü evde çok önemli bir şeyi unuttuğunu fark ediyor. 4 saatte evine ulaşmaya çalışıyor ama ilk 2 saati trafikte geçiriyor. Sonraki yarım saati saatte 30 mil hızla sürüyor, ardından kalan 4 saatin kalan süresini saatte 80 mil hızla sürüyor. Bu 4 saatin sonunda evden ne kadar uzaktadır?",
+    "ground_truth": "45",
+    "raw_output": "Bu soruyu çözmek için John'un evden uzaklaştığı toplam mesafeyi hesaplamamız gerekir. Bu, onun evden geri dönmeye başladığı noktadaki konumudur.\n\n1.  **İlk Yolculuk (Evin dışına çıkma):**\n    *   Süre: 3 saat\n    *   Hız: 60 mil/saat\n    *   Mesafe: 3 saat × 60 mil/saat = 180 mil\n\n2.  **İkinci Yolculuk (Geri dönüş):**\n    *   Toplam süre: 4 saat\n    *   Trafikte geçen süre: 2 saat\n    *   Kalan süre: 4 saat - 2 saat = 2 saat\n    *   Bu kalan 2 saat içindeki yolculuklar iki parçadan oluşur:\n        *   **Parça 1:** Yarım saat (0.5 saat)\n            *   Hız: 30 mil/saat\n            *   Mesafe: 0.5 saat × 30 mil/saat = 15 mil\n        *   **Parça 2:** Kalan süre (2 saat - 0.5 saat = 1.5 saat)\n            *   Hız: 80 mil/saat\n            *   Mesafe: 1.5 saat × 80 mil/saat = 120 mil\n    *   Geri dönüş yolculuğundaki toplam mesafe: 15 mil + 120 mil = 135 mil\n\n3.  **Toplam Mesafe:**\n    *   John'un evden uzaklaştığı toplam mesafe, ilk yolculuk ve geri dönüş yolculuğu mesafelerinin toplamıdır.\n    *   Toplam Mesafe = 180 mil + 135 mil = 315 mil\n\n#### 315",
+    "extracted": "315",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 8,
+    "question": "Eliza'nın her hafta çalıştığı ilk 40 saatteki saatlik ücreti 10 dolardır. Ayrıca normal saat ücretinin 1,2 katı fazla mesai ücreti alıyor. Eliza bu hafta 45 saat çalıştıysa bu haftaki kazancı ne kadardır?",
+    "ground_truth": "460",
+    "raw_output": "Eliza'nın haftalık kazancını iki kısımdan hesaplayabiliriz:\n\n1.  **Normal saatler:** Eliza'nın ilk 40 saati normal saat olarak kabul edilir.\n    *   40 saat × 10 dolar/saat = 400 dolar\n\n2.  **Mesai saatleri:** Eliza'nın toplam 45 saat çalıştığına göre, 45 - 40 = 5 saat mesai saati vardır.\n    *   Mesai ücreti = Normal saat ücreti × 1,2\n    *   Mesai ücreti = 10 dolar × 1,2 = 12 dolar/saat\n    *   5 saat × 12 dolar/saat = 60 dolar\n\n3.  **Toplam Kazanç:**\n    *   Toplam Kazanç = Normal saat kazancı + Mesai saat kazancı\n    *   Toplam Kazanç = 400 dolar + 60 dolar = 460 dolar\n\n#### 460",
+    "extracted": "460",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 9,
+    "question": "Yeni bir program ilk ayda 60 kez indirildi. İkinci aydaki indirme sayısı ilk aydaki indirmelerin üç katı kadardı ancak üçüncü ayda %30 oranında azaldı. Program üç ayda toplam kaç kez indirildi?",
+    "ground_truth": "366",
+    "raw_output": "Program üç ayda toplam kaç kez indirildiğini bulmak için her aydaki indirme sayısını ayrı ayrı hesaplayıp toplayacağız.\n\n1.  **İlk Ay:**\n    *   İndirme sayısı: **60**\n\n2.  **İkinci Ay:**\n    *   İlk aydaki indirmelerin üç katıdır.\n    *   Hesaplama: 60 * 3 = **180**\n\n3.  **Üçüncü Ay:**\n    *   İkinci aydaki indirmelerin %30 oranında azalmıştır.\n    *   Önce azalma miktarını bulalım: 180 * (%30 / 100) = 180 * 0.30 = 54\n    *   Sonra bu miktarı ikinci aydaki toplamdan çıkaralım: 180 - 54 = **126**\n\n4.  **Toplam İndirme Sayısı:**\n    *   Üç aydaki indirme sayılarını toplayalım: 60 + 180 + 126 = 366\n\n#### 366",
+    "extracted": "366",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 10,
+    "question": "Toula fırına gitti ve çeşitli hamur işleri satın aldı. Düzinesi 68 dolara 3 düzine çörek, düzinesi 80 dolara 2 düzine mini kek ve düzinesi 55 dolara 6 düzine mini cheesecake satın aldı. Toplam maliyet ne kadar oldu?",
+    "ground_truth": "694",
+    "raw_output": "Toplam maliyeti bulmak için her bir ürünün maliyetini ayrı ayrı hesaplayıp sonra birleştiririz.\n\n1.  **Çörek maliyeti:**\n    *   3 düzine çörek, 3 x 12 = 36 adet demektir.\n    *   36 adet çörek x 68 dolar/adet = 2448 dolar.\n\n2.  **Mini kek maliyeti:**\n    *   2 düzine mini kek, 2 x 12 = 24 adet demektir.\n    *   24 adet mini kek x 80 dolar/adet = 1920 dolar.\n\n3.  **Mini cheesecake maliyeti:**\n    *   6 düzine mini cheesecake, 6 x 12 = 72 adet demektir.\n    *   72 adet mini cheesecake x 55 dolar/adet = 3960 dolar.\n\n4.  **Toplam maliyet:**\n    *   2448 + 1920 + 3960 = 8328 dolar.\n\n#### 8328",
+    "extracted": "8328",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 11,
+    "question": "Carlos limon ağacı dikiyor. Ağacın dikilmesi 90 dolara mal olacak. Her yıl 7 limon yetiştirecek ve bunları tanesi 1,5 dolara satabilecek. Ağacın sulanması ve beslenmesi yılda 3 dolara mal oluyor. Limon ağacından para kazanmaya başlaması kaç yıl alacak?",
+    "ground_truth": "13",
+    "raw_output": "Bu soruyu çözmek için ağacın ilk yıl sonunda ne kadar kâr edeceğini ve bu kârın dikim maliyetini ne kadar zaman içinde karşılayacağını hesaplamamız gerekir.\n\n1.  **Yıllık Kârı Hesaplama:**\n    *   Yıllık gelir: 7 limon × 1,5 dolar/limon = 10,5 dolar\n    *   Yıllık gider (sulanma ve beslenme): 3 dolar\n    *   Yıllık kâr: 10,5 dolar - 3 dolar = 7,5 dolar\n\n2.  **Kazanmaya Başlama Süresini Hesaplama:**\n    *   Ağacın dikilmesi için gereken toplam maliyet: 90 dolar\n    *   Yıllık kâr: 7,5 dolar\n    *   Kazanmaya başlama süresi: 90 dolar / 7,5 dolar/yıl = 12 yıl\n\nAğacın para kazanmaya başlaması 12 yıl alacaktır.\n\n#### 12",
+    "extracted": "12",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 12,
+    "question": "Melanie kapıdan kapıya satış yapan bir kadındır. Elektrikli süpürgelerinin üçte birini yeşil evde, 2 tanesini kırmızı evde, kalanların yarısını da turuncu evde sattı. Melanie'nin 5 elektrikli süpürgesi kaldıysa kaç taneyle başladı?",
+    "ground_truth": "18",
+    "raw_output": "Önce Melanie'in turuncu evde sattığı süpürgelerin sayısını bulalım.\n\n1.  **Yeşil evde sattı:** Toplamın 1/3'ü.\n2.  **Kırmızı evde sattı:** 2 tanesi.\n3.  **Kalanlar:** Toplamdan (1/3 + 2) çıkarılan kısım.\n4.  **Turuncu evde sattı:** Kalanların yarısı.\n\nToplam sayıyı **T** olarak düşünelim.\n\n*   Yeşil evde: T/3\n*   Kırmızı evde: 2\n*   Kalanlar: T - (T/3 + 2) = T - T/3 - 2 = 2T/3 - 2\n*   Turuncu evde: (2T/3 - 2) / 2 = T/3 - 1\n\nSattığı toplam süpürgeler, başlangıçtaki toplamdan 5 tanesi kaldıysa, kalan 5 taneyi bulalım:\n\nToplam - (Yeşil + Kırmızı + Turuncu) = Kalan\nT - (T/3 + 2 + T/3 - 1) = 5\nT - (2T/3 + 1) = 5\nT - 2T/3 - 1 = 5\nT/3 - 1 = 5\nT/3 = 6\nT = 18\n\nMelanie 18 elektrikli süpürgesiyle başladı.\n\n#### 18",
+    "extracted": "18",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 13,
+    "question": "20 kişilik bir dans dersinde öğrencilerin %20'si çağdaş dansa, geri kalanın %25'i caz dansına ve geri kalanı hip-hop dansına kaydolmuştur. Tüm öğrencilerin yüzde kaçı hip-hop dansına kaydoldu?",
+    "ground_truth": "60",
+    "raw_output": "Öğrencilerin toplam sayısını 20 olarak alalım.\n\n1.  **Çağdaş dansa kaydolmuş öğrenci sayısı:**\n    20 öğrencinin %20'si: $20 \\times 0.20 = 4$ öğrenci.\n\n2.  **Caz dansına kaydolmuş öğrenci sayısı:**\n    Geri kalan öğrencilerin %25'i. Önce geri kalan öğrenci sayısını bulalım:\n    $20 - 4 = 16$ öğrenci.\n    Bu 16 öğrencinin %25'i: $16 \\times 0.25 = 4$ öğrenci.\n\n3.  **Hip-hop dansına kaydolmuş öğrenci sayısı:**\n    Toplam öğrenci sayısından çağdaş ve caz dansına kaydolmuş öğrenci sayılarını çıkaralım:\n    $20 - 4 - 4 = 12$ öğrenci.\n\n4.  **Hip-hop dansına kaydolmuş öğrencilerin yüzdesi:**\n    Hip-hop öğrenci sayısını toplam öğrenci sayısına bölüp yüzdelere çevirelim:\n    $(12 / 20) \\times 100\\% = 60\\%$\n\n#### 60",
+    "extracted": "60",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 14,
+    "question": "Bir tüccar 2 satın alma planı arasında seçim yapmak istiyor: 5.000 $ değerinde mücevher veya 8.000 $ değerinde elektronik aletler. Mali danışmanı, aynı ay içinde mücevher pazarının %2,5, elektronik alet pazarının ise %1,2 artacağını tahmin ediyor. Eğer tüccar bu ayın sonunda bir seçim yaparak kârını maksimize etmek istiyorsa, bu ne kadar kâr eder?",
+    "ground_truth": "125",
+    "raw_output": "Soruyu çözmek için her iki seçeneğin de artışı hesaplama ve ardından kârı bulmamız gerekiyor.\n\n1.  **Mücevher Seçeneği:**\n    *   Başlangıç Değeri: 5.000 $\n    *   Artış Oranı: %2,5\n    *   Artış Miktarı: 5.000 * 0,025 = 125 $\n    *   Son Değer: 5.000 + 125 = 5.125 $\n\n2.  **Elektronik Alet Seçeneği:**\n    *   Başlangıç Değeri: 8.000 $\n    *   Artış Oranı: %1,2\n    *   Artış Miktarı: 8.000 * 0,012 = 96 $\n    *   Son Değer: 8.000 + 96 = 8.096 $\n\n3.  **Kâr Hesaplama:**\n    *   Mücevher kârı: 5.125 $\n    *   Elektronik alet kârı: 8.096 $\n    *   En yüksek kâr: 8.096 $\n\n#### 8096",
+    "extracted": "8096",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 15,
+    "question": "İki tren aynı anda San Rafael'den ayrılıyor. Her ikisi de 80 mil boyunca seyahat ederek batıya doğru ilerlemeye başlarlar. Ertesi gün kuzeye doğru 150 mil yol kat ederler. Her trenin iki günde kat ettiği mesafe ne kadardır?",
+    "ground_truth": "230",
+    "raw_output": "Her bir trenin iki günde kat ettiği toplam mesafeyi bulmak için her bir gün kat ettiği mesafeleri toplayalım.\n\n1.  **İlk gün:** Her iki tren de 80 mil yol kat etmiştir.\n2.  **İkinci gün:** Her iki tren de 150 mil yol kat etmiştir.\n\nHer bir trenin toplam mesafesi:\n80 mil + 150 mil = 230 mil\n\n#### 230",
+    "extracted": "230",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 16,
+    "question": "Jill, öğretmenlik yapması için saat başına 20 dolar, amigo koçu olması için ise 30 dolar alıyor. Eğer yılda 50 hafta, haftada 35 saat öğretmen ve haftada 15 saat antrenör olarak çalışıyorsa yıllık maaşı ne kadardır?",
+    "ground_truth": "57500",
+    "raw_output": "Öncelikle Jill'in yıllık çalışma saatlerini hesaplayalım:\n*   Öğretmenlik için: 50 hafta × 35 saat/hafta = 1750 saat\n*   Antrenörlik için: 50 hafta × 15 saat/hafta = 750 saat\n\nToplam yıllık çalışma saatleri:\n1750 saat + 750 saat = 2500 saat\n\nŞimdi bu toplam saatleri saatlik ücretlerle çarparak yıllık maaşı bulabiliriz:\n*   Öğretmenlik ücreti: 1750 saat × 20 dolar/saat = 35.000 dolar\n*   Antrenörlik ücreti: 750 saat × 30 dolar/saat = 22.500 dolar\n\nToplam yıllık maaş:\n35.000 dolar + 22.500 dolar = 57.500 dolar\n\n#### 57500",
+    "extracted": "57500",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 17,
+    "question": "Claire her sabah kahvaltıda 3 yumurtalı omlet yapıyor. 4 haftada kaç düzine yumurta yiyecektir?",
+    "ground_truth": "7",
+    "raw_output": "Önce Claire'in bir haftada kaç yumurta yediğini bulalım.\n\n*   Bir gün 3 yumurta yiyor.\n*   Bir hafta 7 gün olduğu için: 3 yumurta/gün × 7 gün/hafta = 21 yumurta/hafta.\n\nŞimdi 4 haftada toplam kaç yumurta yediğini bulalım.\n\n*   4 hafta × 21 yumurta/hafta = 84 yumurta.\n\nSon olarak, bu toplam yumurta sayısını düzineye (12'ye) çevirelim.\n\n*   84 yumurta / 12 yumurta/düzine = 7 düzine.\n\n#### 7",
+    "extracted": "7",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 18,
+    "question": "Marissa 19 kilometrelik bir parkurda yürüyüş yapıyor. İlk 4 mili 1 saat, sonraki iki mili ise bir saat daha yürüdü. Ortalama hızının saatte 4 mil olmasını istiyorsa, kalan mesafeyi yürümek için hangi hızda (saatte mil olarak) ihtiyacı vardır?",
+    "ground_truth": "6",
+    "raw_output": "Öncelikle Marissa'nın toplam mesafesini ve toplam süresini bulalım.\n\n1.  **Toplam Mesafe:** Soruda verilen toplam mesafe 19 kilometre. Ancak hız hesaplamalarında birim tutarlı olması için tüm mesafeleri mil olarak ifade etmeliyiz.\n    *   1 mil = 1.60934 kilometre.\n    *   Toplam mesafe (mil cinsinden) = 19 / 1.60934 ≈ 11.799 mil.\n\n2.  **Toplam Süre:**\n    *   İlk 4 mil için 1 saat.\n    *   Sonraki 2 mil için 1 saat daha (yani toplam 2 saat).\n    *   Toplam geçen süre = 1 saat + 2 saat = 3 saat.\n\n3.  **Kalan Mesafe:**\n    *   Marissa'nın yürüdüğü toplam mesafe = 4 mil + 2 mil = 6 mil.\n    *   Kalan mesafe = Toplam mesafe - Yürüdüğü mesafe\n    *   Kalan mesafe = 11.799 mil - 6 mil = 5.799 mil.\n\n4.  **İstenen Hız:**\n    *   Hız = Mesafe / Süre\n    *   İstenen hız = Kalan mesafe / Kalan süre\n    *   Kalan süre = Toplam süre - Geçen süre = 3 saat - 3 saat = 0 saat.\n\nBurada bir sorun var. Marissa, toplam mesafeyi (19 km) tamamlamak için 3 saatta 6 mil yürüdü. Bu, saatte 2 mil hız demektir. Eğer hedef hızı (saatte 4 mil) elde etmek istiyorsa, kalan mesafeyi yürümek için **sıfır süreye** ihtiyacı vardır. Bu, fiziksel olarak imkansızdır.\n\nSorunun mantığı, Marissa'nın yürüdüğü mesafeyi (6 mil) toplam mesafeden (19 km) çıkararak kalan mesafeyi bulması gerektiği yönünde. Ancak birim dönüşümü (km'den mil'e) yapılmadan bu işlem yapıldığında sonuçlar hatalı çıkar.\n\nEğer soru, Marissa'nın yürüdüğü mesafeyi (6 mil) toplam mesafeden (19 km) çıkararak kalan mesafeyi bulmaya çalışıyorsa, bu birim tutarsızlığına yol açar. Ancak soru, \"saatte 4 mil\" hedef hızı veriyor. Bu, birimlerin mil cinsinden olması gerektiğini gösterir.\n\nDoğru yaklaşım, tüm değerleri mil cinsinden kullanmaktır:\n*   Toplam Mesafe: 19 km / 1.60934 km/mil ≈ 11.8 mil\n*   Yürüdüğü Mesafe: 6 mil\n*   Kalan Mesafe: 11.8 - 6 = 5.8 mil\n*   Kalan Süre: 3 saat\n*   İstenen Hız: 5.8 mil / 3 saat ≈ 1.93 mil/saat\n\nAncak, sorunun \"19 kilometre\" ve \"saatte 4 mil\" gibi farklı birimlerin karıştırıldığı bir tuzak içerebileceği de dikkate alınmalıdır. Eğer soru, Marissa'nın yürüdüğü mesafeyi (6 mil) toplam mesafeden (19 km) çıkararak kalan mesafeyi bulmaya çalışıyorsa, bu matematiksel olarak anlamsızdır.\n\nEn olası ve mantıklı yorum, sorunun birim dönüşümünü gözden kaçırıldığı bir tuzak olduğunu düşmektir. Doğru çözüm, tüm değerleri mil cinsinden alarak hesaplamaktır.\n\n*   Toplam Mesafe (mil): 19 / 1.60934 ≈ 11.799 mil\n*   Yürüdüğü Mesafe: 4 + 2 = 6 mil\n*   Kalan Mesafe: 11.799 - 6 = 5.799 mil\n*   Kalan Süre: 1 + 2 = 3 saat\n*   İstenen Hız: 5.799 / 3 ≈ 1.933 mil/saat\n\n#### 1.933",
+    "extracted": "1.933",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 19,
+    "question": "Üçte ikisi su olan 10 litre portakal içeceğim var ve bunu beşte üçü su olan 15 litre ananaslı içeceğime eklemek istiyorum. Ama dökerken portakallı içeceğin bir litresini döküyorum. Geriye kalan 24 litrede ne kadar su var?",
+    "ground_truth": "15",
+    "raw_output": "Önce her iki içeceğin de ne kadar su olduğunu hesaplayalım.\n\n1.  **Portakal içeceği:**\n    *   Toplam hacim: 10 litre\n    *   Su oranı: Üçte ikisi (2/3)\n    *   Su miktarı: $10 \\times \\frac{2}{3} = \\frac{20}{3}$ litre\n\n2.  **Ananaslı içecek:**\n    *   Toplam hacim: 15 litre\n    *   Su oranı: Beşte üçü (3/5)\n    *   Su miktarı: $15 \\times \\frac{3}{5} = 9$ litre\n\n3.  **İki içeceğin toplam su miktarı:**\n    *   Toplam su: $\\frac{20}{3} + 9 = \\frac{20}{3} + \\frac{27}{3} = \\frac{47}{3}$ litre\n\n4.  **Dökülen su miktarı:**\n    *   Dökülen miktar: 1 litre\n\n5.  **Geriye kalan su miktarı:**\n    *   Kalan su: $\\frac{47}{3} - 1 = \\frac{47}{3} - \\frac{3}{3} = \\frac{44}{3}$ litre\n\n$\\frac{44}{3}$ litre, ondalık olarak yaklaşık 14.67 litre eder.\n\n#### 14.67",
+    "extracted": "14.67",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 20,
+    "question": "Raymond ve Samantha kuzenler. Raymond, Samantha'dan 6 yıl önce doğdu. Raymond'un 23 yaşında bir oğlu oldu. Eğer Samantha şu anda 31 yaşındaysa, Raymond'un oğlu kaç yıl önce doğmuştur?",
+    "ground_truth": "14",
+    "raw_output": "Öncelikle Raymond'un şu anki yaşını bulalım. Raymond, Samantha'dan 6 yıl önce doğdu ve Samantha 31 yaşında. Bu durumda Raymond'un şu anki yaşı:\n31 - 6 = 25 yaş.\n\nRaymond'un oğlu 23 yaşında. Oğlunun doğduğu yıl, Raymond'un 23 yaşında olduğu yıl. Raymond'un şu an 25 yaşında olduğu için, oğlu 25 - 23 = 2 yıl önce doğmuştur.\n\n#### 2",
+    "extracted": "2",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 21,
+    "question": "Billy DVD satıyor. Salı günü 8 müşterisi var. İlk 3 müşterisinin her biri birer DVD satın alıyor. Sonraki 2 müşterisinin her biri 2 DVD satın alıyor. Son 3 müşterisi hiç DVD satın almıyor. Billy Salı günü kaç DVD sattı?",
+    "ground_truth": "7",
+    "raw_output": "Billy'nin Salı günü sattığı DVD sayısını hesaplamak için her müşteri grubuna ait DVD sayısını toplayalım:\n\n1.  **İlk 3 müşteri:** Her biri 1 DVD sattığı için:\n    3 müşteri × 1 DVD/müşteri = 3 DVD\n\n2.  **Sonraki 2 müşteri:** Her biri 2 DVD sattığı için:\n    2 müşteri × 2 DVD/müşteri = 4 DVD\n\n3.  **Son 3 müşteri:** Hiç DVD satmadıkları için:\n    3 müşteri × 0 DVD/müşteri = 0 DVD\n\nToplam DVD sayısı bu üç grubun toplamıdır:\n3 + 4 + 0 = 7\n\n#### 7",
+    "extracted": "7",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 22,
+    "question": "Bir mum yandığı her saatte 2 santimetre erir. Bir mum saat 13:00'ten 17:00'ye kadar yandıktan sonra kaç santimetre daha kısa olur?",
+    "ground_truth": "8",
+    "raw_output": "Mumun erime hızı saatte 2 santimetre ve mum 13:00'den 17:00'e kadar yanmıştır.\n\nÖncelikle mumun yanma süresini hesaplayalım:\n17:00 - 13:00 = 4 saat\n\nMumun 4 saat boyunca yanması ve her saatte 2 santimetre ermesi durumunda toplam erime miktarı:\n4 saat × 2 cm/saat = 8 cm\n\n#### 8",
+    "extracted": "8",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 23,
+    "question": "Kyle geçen yılın en çok satan kitabını 19,50 dolara satın aldı. Bu, orijinal fiyattan %25 indirimlidir. Kitabın orijinal fiyatı ne kadardı?",
+    "ground_truth": "26",
+    "raw_output": "Kyle'in ödediği 19,50 dolar, orijinal fiyattan %25 indirim yapılan son fiyadır. Bu, orijinal fiyatın %75'ini temsil eder.\n\nOrijinal fiyatı bulmak için 19,50 doları %75'e (veya 0,75'e) bölüyoruz:\n\nOrijinal Fiyat = 19,50 / 0,75 = 26\n\n#### 26",
+    "extracted": "26",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 24,
+    "question": "Marie, fiyatı 12 dolar olan bir tavuk yemeği, tanesi 3 dolar olan 5 paket süt, tanesi 1,50 dolar olan 4 elma ve birkaç kutu pizza sipariş etti. Marie toplam 50 dolar ödedi. Her kutunun maliyeti 8,50 dolar olduğuna göre Marie kaç kutu pizza sipariş etti?",
+    "ground_truth": "2",
+    "raw_output": "Öncelikle Marie'nin yemeği, süt, elma ve pizza dışındaki ürünler için harcadığı toplam tutarı hesaplayalım:\n\n*   **Tavuk yemeği:** 12 dolar\n*   **Süt:** 5 paket × 3 dolar/paket = 15 dolar\n*   **Elma:** 4 elma × 1,50 dolar/elma = 6 dolar\n\nBu üç ürünün toplam maliyeti: 12 + 15 + 6 = 33 dolar.\n\nMarie'nin toplam 50 dolar harcadığına göre, pizzalar için harcadığı tutar bu tutardan çıkarılmalıdır:\n50 dolar - 33 dolar = 17 dolar.\n\nHer kutunun 8,50 dolar olduğu bilindiğine göre, sipariş edilen kutu sayısını bulmak için toplam pizza maliyetini bir kutunun maliyetine bölelim:\n17 dolar / 8,50 dolar/kutu = 2 kutu.\n\n#### 2",
+    "extracted": "2",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 25,
+    "question": "Mishka 3 çift şort, 3 çift pantolon ve 3 çift ayakkabı satın aldı. Bir çift şortun fiyatı 16,50 dolardır. Bir çift pantolonun fiyatı 22,50 dolar, bir çift ayakkabının fiyatı ise 42 dolardır. Mishka tüm giyim eşyalarına kaç dolar harcadı?",
+    "ground_truth": "243",
+    "raw_output": "Mishka'nın harcadığı toplam tutarı hesaplamak için her bir ürün grubunun toplam fiyatını bulup sonra bunları toplayacağız.\n\n1.  **Şortların toplam fiyatı:**\n    3 çift şort × 16,50 dolar/cift = 49,50 dolar\n\n2.  **Pantolonların toplam fiyatı:**\n    3 çift pantolon × 22,50 dolar/cift = 67,50 dolar\n\n3.  **Ayakkabıların toplam fiyatı:**\n    3 çift ayakkabı × 42 dolar/cift = 126 dolar\n\n4.  **Toplam harcama:**\n    49,50 + 67,50 + 126 = 243 dolar\n\n#### 243",
+    "extracted": "243",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 26,
+    "question": "Cynthia her gece bir porsiyon dondurma yiyor. Karton başına 4,00$ maliyetle karton başına 15 porsiyon dondurma içeren karton dondurma satın alıyor. 60 gün sonra dondurmaya ne kadar harcayacak?",
+    "ground_truth": "16",
+    "raw_output": "Öncelikle Cynthia'nın 60 günde toplam ne kadar dondurma yediğini bulalım:\n60 gün × 1 porsiyon/gün = 60 porsiyon\n\nSonra, bu 60 porsiyonun ne kadar maliyetine sahip olduğunu hesaplayalım. Bir kartonda 15 porsiyon olduğu için, 60 porsiyon için kaç karton gerektiğini bulalım:\n60 porsiyon / 15 porsiyon/karton = 4 karton\n\nSon olarak, 4 kartonun toplam maliyetini hesaplayalım:\n4 karton × 4,00$ /karton = 16,00$\n\n#### 16\n#### 16,00",
+    "extracted": "16.00",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 27,
+    "question": "Henry 60 millik bisiklet yolculuğu sırasında iki durak yaptı. İlk olarak 20 mil sonra durdu. İkinci durağı yolculuğun bitimine 15 mil kalaydı. Birinci ve ikinci durakları arasında kaç mil yol kat etti?",
+    "ground_truth": "25",
+    "raw_output": "Henry'nin toplam yolculuğu 60 mil.\n\n1.  İlk durak 20 mil sonra yapıldığı için, ilk duraktan ikinci duraka kadar olan mesafe, toplam mesafeden ilk durak mesafesini çıkararak bulunur:\n    60 mil - 20 mil = 40 mil\n\n2.  İkinci durak yolculuğun bitimine 15 mil kala yapıldığı için, ikinci duraktan bitişe kadar olan mesafe 15 mil'dir.\n\n3.  Birinci ve ikinci duraklar arasındaki mesafe, toplam mesafeden son durak mesafesini çıkararak bulunur:\n    60 mil - 15 mil = 45 mil\n\nBu sonuç, ilk duraktan ikinci duraka kadar olan mesafedir.\n\n#### 45",
+    "extracted": "45",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 28,
+    "question": "Gloria ayakkabı alışverişindeyken ayakkabı bütçesine uygun bir çift botla karşılaşır. Ancak botlar ile botlardan beş dolar daha ucuza mal olan iki çift yüksek topuklu ayakkabı arasında seçim yapması gerekiyor. Bir çift topuğun fiyatı 33 dolar, diğerinin fiyatı ise iki katı olduğuna göre botların fiyatı kaç dolar?",
+    "ground_truth": "104",
+    "raw_output": "Botların fiyatını bulmak için aşağıdaki adımları izleyelim:\n\n1.  **Topuklu ayakkabıların fiyatlarını bulalım:**\n    *   Birinci çift topuklu ayakkabı: 33 dolar.\n    *   İkinci çift topuklu ayakkabı: Birinci çiftin iki katı, yani $33 \\times 2 = 66$ dolar.\n\n2.  **Topuklu ayakkabıların toplam fiyatını hesaplayalım:**\n    *   $33 + 66 = 99$ dolar.\n\n3.  **Botların fiyatını bulalım:**\n    *   Soruda, botlar, topuklu ayakkabılardan beş dolar daha ucuz olduğu belirtiliyor.\n    *   Botların fiyatı = Topuklu ayakkabıların toplam fiyatı - 5 dolar\n    *   Botların fiyatı = $99 - 5 = 94$ dolar.\n\n#### 94",
+    "extracted": "94",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 29,
+    "question": "Darrell ve Allen'ın yaşları 7:11 oranındadır. Şu andaki toplam yaşı 162 ise Allen'ın 10 yıl sonraki yaşını hesaplayın.",
+    "ground_truth": "109",
+    "raw_output": "Darrell ve Allen'ın yaşları 7:11 oranında olduğuna göre, yaşlarını 7x ve 11x olarak düşünebiliriz.\n\nToplam yaşları 162 olduğuna göre:\n7x + 11x = 162\n18x = 162\nx = 9\n\nAllen'ın şu anki yaşı 11x'dir:\n11 * 9 = 99\n\nAllen'ın 10 yıl sonraki yaşı:\n99 + 10 = 109\n\n#### 109",
+    "extracted": "109",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 30,
+    "question": "Gunter kavanozdaki jöleli şekerleri saymaya çalışıyor. Arkadaşlarına kavanozda kaç tane olduğunu düşündüklerini sorar. Biri 80 diyor. Bir diğeri ilkinin yarısından 20 fazla diyor. Üçüncüsü ilkinden %25 daha fazla söylüyor. Ortalama tahminleri nedir?",
+    "ground_truth": "80",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **İlk tahmin:** 80\n2.  **İkinci tahmin:** İlk tahminin yarısından 20 fazla.\n    *   (80 / 2) + 20 = 40 + 20 = 60\n3.  **Üçüncü tahmin:** İlk tahminden %25 daha fazla.\n    *   İlk tahminin %25'i: 80 * 0.25 = 20\n    *   Üçüncü tahmin: 80 + 20 = 100\n\nŞimdi ortalamayı bulmak için bu üç sayıyı toplar ve üçe böleriz:\n*   Toplam: 80 + 60 + 100 = 240\n*   Ortalama: 240 / 3 = 80\n\n#### 80",
+    "extracted": "80",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 31,
+    "question": "John 10 köpeğe bakıyor. Her köpeğin yürümesi ve işleriyle ilgilenmesi günde 0,5 saat alır. Haftada kaç saatini köpeklere bakmaya ayırıyor?",
+    "ground_truth": "35",
+    "raw_output": "John, 10 köpeğe bakıyor ve her köpeğe günde 0,5 saat ayırıyor.\n\nÖnce günde harcadığı toplam süreyi bulalım:\n10 köpek × 0,5 saat/köpek = 5 saat\n\nSonra bu günlük süreyi haftaya çevirelim (haftada 7 gün var):\n5 saat/gün × 7 gün = 35 saat\n\nJohn haftada 35 saati köpeklere bakmaya ayırıyor.\n\n#### 35",
+    "extracted": "35",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 32,
+    "question": "Gretchen'ın 110 jetonu var. Gümüş paralardan 30 daha fazla altın var. Gretchen'ın kaç altın parası var?",
+    "ground_truth": "70",
+    "raw_output": "Gretchen'in 110 jetonu vardır ve bu sayı, altın parasının sayısından 30 daha fazladır. Bu durumda, altın parasının sayısını bulmak için jeton sayısından 30 çıkarılır.\n\n110 - 30 = 80\n\nGretchen'in 80 altın parası vardır.\n\n#### 80",
+    "extracted": "80",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 33,
+    "question": "Siobhan'ın Aaron'dan 2 daha az mücevheri var. Aaron'un Raymond'un mücevherlerinin yarısından 5 fazla mücevheri var. Raymond'un 40 mücevheri varsa Siobhan'ın kaç mücevheri var?",
+    "ground_truth": "23",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Raymond'un mücevheri:** Soruda Raymond'un 40 mücevheri olduğu belirtilmiştir.\n2.  **Aaron'un mücevheri:** Aaron, Raymond'un mücevherlerinin yarısından 5 fazladır.\n    *   Raymond'un yarısı: 40 / 2 = 20\n    *   Aaron'un mücevheri: 20 + 5 = 25\n3.  **Siobhan'ın mücevheri:** Siobhan, Aaron'dan 2 daha az mücevheri vardır.\n    *   Siobhan'ın mücevheri: 25 - 2 = 23\n\nSiobhan'ın 23 mücevheri vardır.\n\n#### 23",
+    "extracted": "23",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 34,
+    "question": "Mike 40 dakika boyunca masa tenisi oynuyor. İlk 20 dakikada 4 sayı attı. İkinci 20 dakikada %25 daha fazla puan alır. Toplam kaç puan aldı?",
+    "ground_truth": "9",
+    "raw_output": "Mike'nin toplam puanını bulmak için iki aşamayı sırayla çözmemiz gerekir.\n\n1.  **İlk 20 dakikadaki puan:** Mike ilk 20 dakikada 4 sayı attı.\n2.  **İkinci 20 dakikadaki puan:** İkinci 20 dakikada, ilk 20 dakikadaki puanın %25'i daha fazla puan almıştır.\n    *   İlk 20 dakikadaki puanın %25'i: $4 \\times 0.25 = 1$\n    *   İkinci 20 dakikadaki puan: $4 + 1 = 5$\n3.  **Toplam puan:** İlk 20 dakikadaki puan ile ikinci 20 dakikadaki puanı toplayalım.\n    *   Toplam puan: $4 + 5 = 9$\n\n#### 9",
+    "extracted": "9",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 35,
+    "question": "Terry günde 2 yoğurt yiyor. Şu anda 4 yoğurt 5,00 dolara satılıyor. 30 günde yoğurda ne kadar harcıyor?",
+    "ground_truth": "75",
+    "raw_output": "Terry'nin 30 günde ne kadar harcadığını bulmak için önce bir günde ne kadar harcadığını hesaplamalıyız.\n\n1.  **Günlük Harcamayı Bulma:** Terry günde 2 yoğurt yiyor ve her yoğurt 5,00 dolara satılıyor.\n    *   Günlük harcama = 2 yoğurt/gün × 5,00 dolar/yoğurt = 10,00 dolar/gün\n\n2.  **Toplam Harcamayı Bulma:** Bu günlük harcamayı 30 gün için çarparız.\n    *   Toplam harcama = 10,00 dolar/gün × 30 gün = 300,00 dolar\n\n#### 300",
+    "extracted": "300",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 36,
+    "question": "John tüm oyuncaklarını satmayı ve parayı video oyunları satın almak için kullanmayı planlıyor. 13 lego seti var ve tanesini 15 dolara satıyor. Her biri 20 dolara 8 video oyunu satın alıyor ve geriye 5 doları kalıyor. Hala kaç tane lego seti var?",
+    "ground_truth": "2",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Toplam satış geliri:** John 13 lego seti satıyor ve her biri 15 dolara satılıyor.\n    *   Toplam gelir = 13 set × 15 dolar/set = 195 dolar.\n\n2.  **Video oyunu maliyeti:** John 8 video oyunu satın alıyor ve her biri 20 dolara.\n    *   Toplam harcama = 8 oyun × 20 dolar/oyun = 160 dolar.\n\n3.  **Kalan para:** Toplam geliri toplam harcamadan çıkararak geriye kalan parayı buluruz.\n    *   Kalan para = 195 dolar - 160 dolar = 35 dolar.\n\n4.  **Kalan lego seti sayısı:** John geriye 5 doları kalmıştır ve bu parayı 35 dolardan elde ettiğine göre, satmadığı lego setlerinin fiyatı 35 - 5 = 30 dolardır.\n    *   Her bir lego setinin 15 dolara satıldığına göre, kaç tane satmadığı hesaplanır:\n    *   Satmadığı set sayısı = 30 dolar / 15 dolar/set = 2 set.\n\nJohn hala 2 tane lego seti vardır.\n\n#### 2",
+    "extracted": "2",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 37,
+    "question": "John haftada 60 mil koşuyor. Haftanın 3 günü koşuyor. İlk gün 3 saat, diğer iki gün ise yarısı kadar koşuyor. Ne kadar hızlı koşuyor?",
+    "ground_truth": "10",
+    "raw_output": "John'un haftalık koşu süresini ve ortalama hızını bulmak için şu adımları izleyelim:\n\n1.  **Haftalık Toplam Süre:**\n    *   İlk gün: 3 saat\n    *   Diğer iki gün: 3 saatın yarısı = 1.5 saat\n    *   Haftalık toplam süre = 3 + 1.5 + 1.5 = 6 saat\n\n2.  **Haftalık Ortalama Hız:**\n    *   Toplam mesafe: 60 mil\n    *   Toplam süre: 6 saat\n    *   Ortalama hız = Toplam Mesafe / Toplam Süre = 60 / 6 = 10 mil/saat\n\nJohn haftada ortalama 10 mil/saat hızla koşuyor.\n\n#### 10",
+    "extracted": "10",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 38,
+    "question": "Dana yürüyebildiğinden dört kat daha hızlı koşabilir, ancak koşabildiğinin yarısı kadar bir hızla atlayabilir. Saatte 3 mil hızla atlayabiliyorsa, zamanın üçte birini koşarak ve üçte ikisini yürüyerek harcayarak altı saatte kaç mil yol kat edebilir?",
+    "ground_truth": "18",
+    "raw_output": "Öncelikle Dana'nın atlayış hızını bilmiyoruz, bu yüzden adım adım ilerleyelim.\n\n1.  **Atlayış Hızını Bulma:**\n    Dana saatte 3 mil hızla atlayabiliyorsa ve bu hızı koşabildiğinin yarısı kadar ise, koşu hızını bulabiliriz.\n    Koşu Hızı = Atlayış Hızı × 2 = 3 mil/saat × 2 = **6 mil/saat**.\n\n2.  **Yürüyüş Hızını Bulma:**\n    Dana koşabildiğinin dört katı kadar hızlı yürüyebilir.\n    Yürüyüş Hızı = Koşu Hızı × 4 = 6 mil/saat × 4 = **24 mil/saat**.\n\n3.  **Toplam Mesafeyi Hesaplama:**\n    Dana toplam 6 saat boyunca hareket eder. Bu süreyi 1/3'ü koşu, 2/3'ü yürüyüş olarak harcar.\n    *   **Koşma Süresi:** 6 saat × (1/3) = 2 saat.\n        Bu sürede kat ettiği mesafe: 2 saat × 6 mil/saat = **12 mil**.\n    *   **Yürüyüş Süresi:** 6 saat × (2/3) = 4 saat.\n        Bu sürede kat ettiği mesafe: 4 saat × 24 mil/saat = **96 mil**.\n\n4.  **Toplam Mesafeyi Toplama:**\n    Toplam mesafe = Koşma mesafesi + Yürüyüş mesafesi\n    Toplam mesafe = 12 mil + 96 mil = **108 mil**.\n\n#### 108",
+    "extracted": "108",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 39,
+    "question": "Brandon'ın iPhone'u Ben'in iPhone'undan dört kat daha eski. Ben'in iPhone'u Suzy'nin iPhone'undan iki kat daha eski. Suzy'nin iPhone'u 1 yaşındaysa Brandon'ın iPhone'u kaç yaşındadır?",
+    "ground_truth": "8",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Suzy'nin iPhone'unun yaşı:** 1 yaş.\n2.  **Ben'in iPhone'unun yaşı:** Suzy'nin iPhone'unun 2 katı kadar eski.\n    *   Ben'in yaşı = 1 × 2 = 2 yaş.\n3.  **Brandon'ın iPhone'unun yaşı:** Ben'in iPhone'unun 4 katı kadar eski.\n    *   Brandon'ın yaşı = 2 × 4 = 8 yaş.\n\nBrandon'ın iPhone'u 8 yaşındadır.\n\n#### 8",
+    "extracted": "8",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 40,
+    "question": "Büyük ejderha Perg, Farbo Dağı'nın tepesinde oturuyordu ve 300 metrelik bir mesafe içindeki her şeye ateş püskürüyordu. Polly, ejderhayı kızdırabilen bilinen tek silah olan altın ciriti, ejderhanın alevlerinin çok yakınına, 120 metrelik bir mesafeye fırlatabilirdi. Ancak Polly safir değerli taşı tuttuğunda, mızrağı, değerli taşı tutmadığı zamana göre üç kat daha uzağa fırlatabiliyordu. Değerli taşı tutuyorsa, Polly ejderhanın alevlerinin ulaşamayacağı ne kadar uzakta durabilir ve yine de altın ciritiyle ejderhaya vurabilirdi?",
+    "ground_truth": "200",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Normal durum:** Değerli taşı tutmadığında, altın ciriti 120 metre uzağa fırlar.\n2.  **Değerli taşı tuttuğu durum:** Soruda, değerli taşı tuttuğunda mızrağın (altın ciritinin) uzağı **üç kat** daha fazla olduğu belirtilmiştir.\n3.  **Hesaplama:** Bu durumda, ciritin fırladığı maksimum mesafe, normal mesafenin 3 katıdır.\n    *   120 metre × 3 = 360 metre.\n\nBu, ejderhanın alevlerinin ulaşamayacağı en uzak mesafedir.\n\n#### 360",
+    "extracted": "360",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 41,
+    "question": "Büyükanne Jones itfaiyecinin öğle yemeği için 5 elmalı turta pişirdi. Her turtayı 8 parçaya böldü ve beş turtayı misafirlerin kendilerine servis etmesi için büfe masasına koydu. Akşamın sonunda misafirler pastalarını alıp yedikten sonra geriye 14 dilim pasta kaldı. Misafirler kaç parça aldı?",
+    "ground_truth": "26",
+    "raw_output": "Önce toplamda kaç dilim pasta olduğunu bulalım:\n*   5 turtanın her biri 8 dilimden oluştuğuna göre: 5 × 8 = 40 dilim.\n\nToplamda 40 dilim pasta vardı. Akşamın sonunda geriye 14 dilim kaldı. Bu durumda misafirler ne kadar dilim yediğini bulmak için toplam dilim sayısından kalan dilim sayısını çıkarırız:\n*   40 - 14 = 26 dilim.\n\nMisafirler toplamda 26 parça pasta almıştır.\n\n#### 26",
+    "extracted": "26",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 42,
+    "question": "Besin değerlerine göre bir paket cipsin porsiyon başına 250 kalorisi var. 300 gramlık bir poşette 5 porsiyon varsa, günlük kalori hedefiniz 2000 ise ve zaten 1800 kalori tüketmişseniz kaç gram yiyebilirsiniz?",
+    "ground_truth": "48",
+    "raw_output": "Öncelikle, cipsin bir porsiyonunda ne kadar kalori olduğunu hesaplayalım:\n300 gramlık poşette 5 porsiyon varsa, her porsiyonun ağırlığı:\n300 / 5 = 60 gramdır.\n\nBir porsiyon 250 kalori olduğuna göre, 60 gram cipsin kalori değeri 250'dir.\n\nŞimdi, günlük kalori hedefiniz 2000 ve zaten 1800 kalori tüketmişseniz, cipsin katkısı olabilecek kalan kalori miktarı:\n2000 - 1800 = 200 kalori.\n\nBu kalan 200 kaloriyi cipsin porsiyon başına 250 kalori ile karşılayabilirsek, kaç porsiyon yiyebileceğinizi bulabiliriz:\n200 / 250 = 0,8 porsiyon.\n\nSon olarak, 0,8 porsiyonun kaç gram olduğunu bulmak için porsiyon başına 60 gram olduğunu hatırlayalım:\n0,8 * 60 = 48 gram.\n\n#### 48",
+    "extracted": "48",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 43,
+    "question": "Charlie balmumu mumları satmak istiyor. Her bir kilo balmumu için 10 adet konik mum yapabiliyor. Bir pound balmumu ve fitillerin malzeme maliyeti 10,00 dolardır. Mumların her birini 2,00$'a satarsa, 20 mum yapıp satarsa ​​net karı ne kadar olur?",
+    "ground_truth": "20",
+    "raw_output": "Bu soruyu çözmek için adım adım ilerleyelim:\n\n1.  **Toplam Satış Gelirini Hesaplama:**\n    Charlie 20 mum yapmış ve her birini 2,00$'a satmıştır.\n    Toplam Gelir = 20 mum × 2,00$/mum = 40,00$\n\n2.  **Toplam Maliyeti Hesaplama:**\n    *   **Balmumu Maliyeti:** Bir pound balmumu 10,00$'dır. Charlie 20 mum yapmıştır ve her bir kilo balmumu için 10 mum yapabildiği için 20 mum için 2 pound balmumu kullanmıştır.\n        Balmumu Maliyeti = 2 pound × 10,00$/pound = 20,00$\n    *   **Fitiller Maliyeti:** Soruda fitillerin maliyetinin 10,00$ olduğu belirtilmiştir.\n        Fitiller Maliyeti = 10,00$\n    *   **Toplam Maliyet:** 20,00$ (balmumu) + 10,00$ (fitiller) = 30,00$\n\n3.  **Net Karı Hesaplama:**\n    Net Kar = Toplam Gelir - Toplam Maliyet\n    Net Kar = 40,00$ - 30,00$ = 10,00$\n\n#### 10",
+    "extracted": "10",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 44,
+    "question": "Meredith, sağlık konuları hakkında yazan ve kalıcı işi olarak her gün müşterilerine bilgi sunan serbest çalışan bir blog yazarıdır. Bir blog makalesinin araştırılması ve yazılması ortalama 4 saat sürer. Geçen hafta Pazartesi günü 5, Salı günü ise Pazartesi gününe göre 2/5 kat daha fazla makale yazdı. Çarşamba günü, Salı günü yazdığı makale sayısının iki katını yazdı. Üç gün içinde makale yazmak için harcadığı toplam saat sayısını hesaplayın.",
+    "ground_truth": "104",
+    "raw_output": "Meredith'in üç gün içinde harcadığı toplam saatleri hesaplamak için her günün harcadığı saat sayısını adım adım bulalım.\n\n1.  **Pazartesi:** Meredith Pazartesi günü 5 makale yazdı.\n    *   Harcadığı saat: 5 makale × 4 saat/makale = **20 saat**\n\n2.  **Salı:** Meredith Salı günü Pazartesi gününe göre 2/5 kat daha fazla makale yazdı.\n    *   Yazdığı makale sayısı: 5 + (5 × 2/5) = 5 + 2 = 7 makale\n    *   Harcadığı saat: 7 makale × 4 saat/makale = **28 saat**\n\n3.  **Çarşamba:** Meredith Çarşamba günü Salı günü yazdığı makale sayısının iki katını yazdı.\n    *   Yazdığı makale sayısı: 7 × 2 = 14 makale\n    *   Harcadığı saat: 14 makale × 4 saat/makale = **56 saat**\n\n**Toplam Saat:**\nToplam harcanan saatleri bulmak için üç günün harcanan saatlerini toplayalım:\n20 saat (Pazartesi) + 28 saat (Salı) + 56 saat (Çarşamba) = 104 saat\n\n#### 104",
+    "extracted": "104",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 45,
+    "question": "Candice kafedeki işine gitmeden önce çantasına 80 adet post-it notu koydu. Yolda bir mağazaya uğradı ve bir paket Post-it notu satın aldı; İşyerinde 220 farklı fincan kahvenin her birine tek bir Post-it notu koydu. Toplamda 23 adet post-it notu kaldıysa, satın aldığı pakette kaç adet Post-it notu vardı?",
+    "ground_truth": "163",
+    "raw_output": "Bu soruyu çözmek için adım adım ilerleyelim:\n\n1.  **Başlangıçtaki Post-it not sayısını bulalım:**\n    Candice başta 80 adet post-it notu vardı.\n\n2.  **İşyerinde kullanılan post-it not sayısını bulalım:**\n    220 fincan kahve için 220 adet post-it notu kullanıldı.\n\n3.  **Kalan post-it not sayısını bulalım:**\n    Toplamda 23 adet post-it notu kaldı.\n\n4.  **Satın alınan post-it not sayısını bulalım:**\n    Satın alınan post-it not sayısını bulmak için, başlangıçtaki sayıdan işyerinde kullanılan sayıyı ve kalan sayıyı çıkarırız.\n    Formül: (Başlangıçtaki Sayı) - (Kullanılan Sayı) - (Kalan Sayı) = (Satın Alınan Sayı)\n    80 - 220 - 23 = ?\n\n    Bu işlemi daha kolay yapabilmek için önce kullanılan ve kalan post-it not sayılarını toplayalım:\n    220 (kullanılan) + 23 (kalan) = 243\n\n    Şimdi başlangıçtaki sayıdan bu toplamı çıkaralım:\n    80 - 243 = -163\n\n    Bu sonuç negatif çıkması, sorudaki verilerin mantıksız olduğu anlamına gelir. Bir kişi başta 80 adet post-it notu alıp, 220 adet kullanırsa, 23 adet kalmak imkansızdır. Bu durumda, sorudaki sayılar arasında bir hata var demektir.\n\n    Ancak, soruyu \"kullanılan\" ve \"kalan\" post-it not sayılarını toplamak yerine, \"satın alınan\" post-it not sayısını bulmak için doğru mantıksal işlemi uygulamak istiyorsak, sorudaki sayıların yerini değiştirmemiz gerekebilir. En olası hata, \"kullanılan\" sayının 220 değil, 20 veya 22 gibi daha küçük bir sayı olmasıdır.\n\n    **Vurgu:** Sorudaki veriler (80 başlangıç, 220 kullanım, 23 kalıntı) matematiksel olarak tutarsızdır. Bir kişi 80 adet malı alıp 220 adet kullanamaz. Bu nedenle sorunun cevabı bulunamaz.\n\n#### -163\n\n*(Not: Cevap negatif olduğu için sorudaki sayılar tutarsızdır. Doğru bir soru olmalıydı. Örneğin, başta 300 adet post-it notu varsa, 220 adet kullanılıp 23 adet kalmışsa, satın alınan pakette 102 adet post-it notu olurdu: 300 - 220 - 23 = 57. Bu da yine yanlış. En mantıklı hata, başlangıçtaki sayının 220'den büyük olmasıdır. Örneğin, başta 243 adet post-it notu varsa, 220 adet kullanılıp 23 adet kalmışsa, satın alınan pakette 0 adet post-it notu olurdu. Başta 244 adet post-it notu varsa, 220 adet kullanılıp 23 adet kalmışsa, satın alınan pakette 1 adet post-it notu olurdu: 244 - 220 - 23 = 1.)*\n\n**Doğru ve Mantıklı Bir Örnek Çözüm:**\n\nEğer soru şu şekilde olsaydı: \"Candice kafedeki işine gitmeden önce çantasına **244** adet post-it notu koydu. Yolda bir mağazaya uğradı ve bir paket Post-it notu satın aldı; İşyerinde **220** farklı fincan kahvenin her birine tek bir Post-it notu koydu. Toplamda **23** adet post-it notu kaldıysa, satın aldığı pakette kaç adet Post-it notu vardı?\"\n\nBu durumda:\n1.  Kullanılan ve kalan post-it not sayılarını toplarız: 220 + 23 = 243\n2.  Başlangıçtaki toplam post-it not sayısından bu toplamı çıkarırız: 244 - 243 = 1\n\nBu durumda, satın alınan pakette 1 adet post-it notu vardı.\n\n#### 1",
+    "extracted": "1",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 46,
+    "question": "John mavi kravatın iki katı kadar kırmızı kravat satın alıyor. Kırmızı kravatlar mavi kravatlara göre %50 daha pahalıdır. Tanesi 40 dolar olan mavi kravatlara 200 dolar harcadı. Kravatlara ne kadar harcadı?",
+    "ground_truth": "800",
+    "raw_output": "Öncelikle John'un mavi kravatların sayısını bulalım. Tanesi 40 dolar olan mavi kravatlara 200 dolar harcamıştır.\n\nMavi kravat sayısı = Toplam harcama / Tane fiyatı\nMavi kravat sayısı = 200 / 40 = 5\n\nSoruda, John'un mavi kravatın iki katı kadar kırmızı kravat aldığı belirtilmiştir.\n\nKırmızı kravat sayısı = Mavi kravat sayısı × 2\nKırmızı kravat sayısı = 5 × 2 = 10\n\nKırmızı kravatlar mavi kravatlara göre %50 daha pahalıdır. Mavi kravat fiyatı 40 dolar olduğuna göre, kırmızı kravat fiyatı:\n\nKırmızı kravat fiyatı = Mavi kravat fiyatı + (Mavi kravat fiyatı × %50)\nKırmızı kravat fiyatı = 40 + (40 × 0.50)\nKırmızı kravat fiyatı = 40 + 20 = 60 dolar\n\nSon olarak, kırmızı kravatların toplam maliyetini bulalım:\n\nToplam kırmızı kravat maliyeti = Kırmızı kravat sayısı × Kırmızı kravat fiyatı\nToplam kırmızı kravat maliyeti = 10 × 60 = 600 dolar\n\nJohn'un kırmızı kravatlar için harcadığı toplam 600 dolardır.\n\n#### 600",
+    "extracted": "600",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 47,
+    "question": "Tracy bahçedeki domates bitkilerini desteklemek için 1,2 metre uzunluğunda bir tel parçası kullandı. Tel 6 inç uzunluğunda parçalar halinde kesildi. Kaç parça elde etti?",
+    "ground_truth": "8",
+    "raw_output": "Bu soruyu çözmek için önce birimlerin uyumlu olması gerekir. Metrik birim (metre) ve imparatorluk birimi (inç) kullanıldığı için, birimi bir tutmak için inç cinsinden hesaplayalım.\n\n1.  **Metreyi inçe çevirme:**\n    *   1 metre = 39.37 inç\n    *   1,2 metre = 1,2 × 39,37 = 47,244 inç\n\n2.  **Parça sayısını bulma:**\n    *   Toplam uzunluk: 47,244 inç\n    *   Her parçanın uzunluğu: 6 inç\n    *   Parça sayısı = Toplam uzunluk / Parça uzunluğu\n    *   Parça sayısı = 47,244 / 6 = 7,874\n\nParça sayısı tam sayı olmalıdır. Bu durumda, tam olarak 7 parça elde edilebilir. Kalan miktar (0,874 parça) bir tam parça oluşturamaz.\n\n#### 7",
+    "extracted": "7",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 48,
+    "question": "Richard 15 katlı bir apartmanda yaşıyor. Her katta 8 daire bulunmakta olup binanın 3/4'ü kullanılmaktadır. Binadaki toplam boş birim sayısı nedir?",
+    "ground_truth": "30",
+    "raw_output": "Öncelikle binadaki toplam daire sayısını bulalım.\nToplam kat sayısı: 15\nHer katta daire sayısı: 8\nToplam daire sayısı = 15 kat × 8 daire/kat = 120 daire\n\nBinanın 3/4'ü kullanılmaktadır. Bu durumda boş kalan dairelerin oranı 1 - 3/4 = 1/4'tür.\nToplam boş daire sayısı = 120 daire × 1/4 = 30 daire\n\n#### 30",
+    "extracted": "30",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 49,
+    "question": "Lloyd'un bir yumurta çiftliği var. Tavukları günde 252 yumurta üretiyor ve bunları düzinesi 2 dolara satıyor. Lloyd yumurtadan haftada ne kadar kazanıyor?",
+    "ground_truth": "294",
+    "raw_output": "Öncelikle bir yumurta çiftliğinin haftada kaç yumurta ürettiğini bulalım. Günde 252 yumurta ürettiğine göre, bir haftada (7 gün) ürettiği toplam yumurta sayısı:\n252 yumurta/gün × 7 gün = 1764 yumurta\n\nŞimdi bu yumurtaların düzine (12 yumurta) olarak kaç adet olduğunu bulalım:\n1764 yumurta / 12 yumurta/düzine = 147 düzine\n\nSon olarak, bu düzinelerin toplam değerini hesaplayalım. Bir düzine 2 dolara satıldığına göre:\n147 düzine × 2 dolar/düzine = 294 dolar\n\nLloyd yumurtadan haftada 294 dolar kazanır.\n\n#### 294",
+    "extracted": "294",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 50,
+    "question": "Tom'un gemisi saatte 10 mil hızla gidebilir. Öğleden sonra 1'den 4'e kadar yelken açıyor. Daha sonra saatte 6 mil hızla geri döner. Geri dönmesi ne kadar sürer?",
+    "ground_truth": "5",
+    "raw_output": "Öncelikle Tom'un gemisinin ne kadar mesafe katettiğini bulmalıyız.\n\n1.  **Giden Yol:**\n    *   Süre: 14:00'den 16:00'a kadar = 2 saat\n    *   Hız: Saatte 10 mil\n    *   Mesafe: 2 saat × 10 mil/saat = 20 mil\n\n2.  **Geri Dönüş Mesafesi:**\n    *   Gemi aynı mesafeyi geri dönmektedir, bu yüzden geri dönüş mesafesi de 20 mil'dir.\n\n3.  **Geri Dönüş Süresi:**\n    *   Mesafe: 20 mil\n    *   Hız: Saatte 6 mil\n    *   Süre = Mesafe / Hız\n    *   Süre = 20 mil / 6 mil/saat = 10/3 saat = 3 saat 20 dakika\n\n#### 3.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+    "extracted": "3.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 51,
+    "question": "Uriah'ın kitap çantası artık ona ağır gelmeye başladı. Ondan 15 kilo alması gerekiyor. Çizgi romanlarının her biri 1/4 pound, oyuncaklarının her biri 1/2 pound ağırlığındadır. Eğer 30 çizgi romanı kaldırırsa kaç oyuncağı çıkarması gerekir?",
+    "ground_truth": "15",
+    "raw_output": "Öncelikle Uriah'ın çantasından toplam kaç pound ağırlık çıkarması gerektiğini hesaplayalım.\n\n1.  **Çizgi romanlarının toplam ağırlığı:**\n    Her biri 1/4 pound olan 30 çizgi romanın toplam ağırlığı:\n    $30 \\times \\frac{1}{4} = \\frac{30}{4} = 7.5$ pound.\n\n2.  **Kalan ağırlık:**\n    Uriah'ın çantasından toplam 15 pound çıkarması gerekiyordu. Çizgi romanları çıkardıktan sonra çantadan kalan ağırlık:\n    $15 - 7.5 = 7.5$ pound.\n\n3.  **Çıkarması gereken oyuncağın sayısı:**\n    Çantadan 7.5 pound daha ağırlık çıkarması gerekiyor ve her bir oyuncağın 1/2 pound ağırlığı var. Bu durumda çıkarması gereken oyuncağın sayısı:\n    $7.5 \\div \\frac{1}{2} = 7.5 \\times 2 = 15$ oyuncağ.\n\n#### 15",
+    "extracted": "15",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 52,
+    "question": "Bir tamirci, kamyon ve araba lastiklerini onarmak için farklı ücretler alıyor. Tamir edilen her kamyon lastiği için tamirci 60$, tamir edilen her araba lastiği için ise 40$ ücret alacaktır. Perşembe günü tamirci 6 kamyon lastiğini ve 4 araba lastiğini onarıyor. Cuma günü tamirci 12 arabayı tamir ediyor ve hiçbir kamyon lastiğini tamir etmiyor. Tamirci daha yüksek gelirle günde ne kadar daha fazla gelir elde etti?",
+    "ground_truth": "40",
+    "raw_output": "Öncelikle her günün toplam gelirini hesaplayalım.\n\n**Perşembe günü:**\n*   6 kamyon lastiği: 6 × 60$ = 360$\n*   4 araba lastiği: 4 × 40$ = 160$\n*   Perşembe günü toplam gelir: 360$ + 160$ = 520$\n\n**Cuma günü:**\n*   12 araba lastiği: 12 × 40$ = 480$\n*   0 kamyon lastiği: 0 × 60$ = 0$\n*   Cuma günü toplam gelir: 480$ + 0$ = 480$\n\nŞimdi iki günün gelir farkını bulalım:\n520$ (Perşembe) - 480$ (Cuma) = 40$\n\nTamirci daha yüksek gelirle Perşembe günü 40$ daha fazla kazanmıştır.\n\n#### 40",
+    "extracted": "40",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 53,
+    "question": "Doubtfire kardeşler, yerel hayvan barınağından sahiplenilen 7 yavru kedi ile eve dönerken, anneleri onları arayarak iki ev kedisinin yeni yavru kedi sahibi olduğunu bildirdi. İlk kedi Patchy'nin üç kat daha fazla yavru kediye sahip olduğunu, diğer kedi Trixie'nin ise 12 yavru kediye sahip olduğunu söylüyor. Doubtfire ailesinin şu anda kaç yavru kedisi var?",
+    "ground_truth": "40",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Trixie'nin yavru sayısı:** Soruda doğrudan verilmiştir. Trixie 12 yavru kediye sahiptir.\n2.  **Patchy'nin yavru sayısı:** Patchy'nin yavru sayısı, Trixie'nin yavru sayısının üç katıdır.\n    *   Patchy'nin yavru sayısı = 12 * 3 = 36\n3.  **Toplam yavru sayısı:** Ailede toplam yavru kedi sayısı, Patchy'nin ve Trixie'nin yavru sayılarının toplamıdır.\n    *   Toplam yavru sayısı = 36 (Patchy) + 12 (Trixie) = 48\n\nDoubtfire ailesinin şu anda 48 yavru kedisi vardır.\n\n#### 48",
+    "extracted": "48",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 54,
+    "question": "Jean'in 30 lolipopu var. Jean lolipoplardan 2 tanesini yiyor. Jean kalan lolipoplarla 2 lolipopu tek bir torbaya paketlemek istiyor. Jean kaç torba doldurabilir?",
+    "ground_truth": "14",
+    "raw_output": "Jean'in başlangıçta 30 lolipopu vardır. 2 tanesini yediği için kalan lolipop sayısı:\n30 - 2 = 28 lolipop\n\nJean, kalan 28 lolipoplardan her torbaya 2 tanesini paketlemek istiyor. Bu durumda doldurabileceği torba sayısı:\n28 / 2 = 14 torba\n\n#### 14",
+    "extracted": "14",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 55,
+    "question": "Peter bu hafta sinemaya gitmeyi planlıyor. Her zaman 7 dolarlık bir bilet ve 7 dolarlık patlamış mısır alıyor. Haftalık 42 doları varsa kaç kez sinemaya gidebilir?",
+    "ground_truth": "3",
+    "raw_output": "Peter'in sinemaya gidebileceği toplam sefer sayısını bulmak için, toplam bütçesini tek seferlik maliyetine bölmeliyiz.\n\n1.  **Tek seferlik maliyet:** Bir bilet (7 dolar) + bir patlamış mısır (7 dolar) = 14 dolar.\n2.  **Toplam sefer sayısı:** Haftalık bütçe (42 dolar) / Tek seferlik maliyet (14 dolar) = 3 sefer.\n\n#### 3",
+    "extracted": "3",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 56,
+    "question": "Ahşap bir köprü 5000 pounddan fazlasını taşıyamaz. Her biri 15 pound ağırlığındaki aynı kutularla dolu bir teslimat kamyonu köprünün üzerinden geçecek. Sürücünün ve boş kamyonun toplam ağırlığı 3755 pounddur. Köprünün ağırlık sınırını aşmayacak şekilde kamyona yüklenebilecek maksimum kutu sayısı nedir?",
+    "ground_truth": "83",
+    "raw_output": "Köprünün taşıyabileceği maksimum toplam yük 5000 pounddur. Bu yük, boş kamyonun ve sürücünün ağırlığı ile kutuların toplam ağırlığından oluşur.\n\nÖncelikle, köprünün kutuların dışında taşıyabileceği maksimum ağırlığı bulalım:\n5000 pound (köprü limiti) - 3755 pound (boş kamyon ve sürücü) = 1245 pound\n\nBu 1245 pound, köprünün üzerinde taşıyabileceği kutuların toplam ağırlığıdır. Her kutunun 15 pound ağırlığı olduğuna göre, taşıyabileceği maksimum kutu sayısını bulmak için bu toplam ağırlığı kutu ağırlığına böleriz:\n1245 / 15 = 83\n\nKamyona 83 kutu yüklense, toplam yük 5000 pound olur ve sınır aşılmaz.\n\n#### 83",
+    "extracted": "83",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 57,
+    "question": "Stephen alışveriş için internetten sipariş verdi. Son faturası 40,00 dolara geldi. Bu bir teslimat satıcısı aracılığıyla gerçekleştiği için, nihai toplamına %25 oranında bir ücret eklediler ve ondan teslimat ücreti olarak 3,00 dolar talep ettiler. Stephen ayrıca 4,00$ bahşiş de ekledi. Ekstra ücretlerden sonra Stephen'ın yiyeceklerinin son fiyatı ne kadar oldu?",
+    "ground_truth": "57",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Temel Fiyat:** 40,00 $\n2.  **Teslimat Satıcısı Ücreti:** %25\n    *   40,00 $'ın %25'i: $40,00 \\times 0,25 = 10,00 $\n3.  **Teslimat Ücreti:** 3,00 $\n4.  **Bahşiş:** 4,00 $\n\nŞimdi tüm ekstra ücretleri toplayalım:\n*   Toplam Ekstra Ücretler = Teslimat Satıcısı Ücreti + Teslimat Ücreti + Bahşiş\n*   Toplam Ekstra Ücretler = 10,00 $ + 3,00 $ + 4,00 $ = 17,00 $\n\nSon fiyatı bulmak için temel fiyata toplam ekstra ücretleri ekleyelim:\n*   Son Fiyat = 40,00 $ + 17,00 $ = 57,00 $\n\n#### 57,00",
+    "extracted": "57.00",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 58,
+    "question": "Bir ahududu çalısının her birinde 20 meyve bulunan 6 küme ve çalının her tarafına dağılmış 67 ayrı meyve vardır. Toplam kaç tane ahududu var?",
+    "ground_truth": "187",
+    "raw_output": "Toplam ahududu bulmak için iki kısmı birleştirmeliyiz:\n\n1.  Çalılardaki meyveler: 6 küpe 20 meyve her birinde olduğu için, 6 x 20 = 120 meyve.\n2.  Çalının etrafındaki meyveler: 67 ayrı meyve.\n\nToplam meyve sayısı: 120 + 67 = 187\n\n#### 187",
+    "extracted": "187",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 59,
+    "question": "Bir sepette 25 portakal vardır; bunların 1'i kötü, %20'si olgunlaşmamış, 2'si ekşi ve geri kalanı iyi. Kaç portakal iyidir?",
+    "ground_truth": "17",
+    "raw_output": "Öncelikle, toplam portakal sayısını ve kötü, olgunlaşmamış ve ekşi portakalların sayısını bulalım.\n\n*   Toplam portakal: 25\n*   Kötü portakal: 1\n*   Ogunlaşmamış portakal: Toplamın %20'si.\n    *   $25 \\times 0.20 = 5$\n*   Ekşi portakal: 2\n\nŞimdi, kötü, olgunlaşmamış ve ekşi portakalların toplam sayısını bulalım:\n$1 + 5 + 2 = 8$\n\nBu 8 portakalın dışındaki portakallar iyidir. Bu sayıyı bulmak için toplam portakal sayısından bu 8 portakalı çıkaralım:\n$25 - 8 = 17$\n\n#### 17",
+    "extracted": "17",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 60,
+    "question": "Janet kızı için bir broş satın alır. Bunu yapmak için malzemeye 500 dolar, ardından kuyumcuya da 800 dolar ödüyor. Daha sonra sigorta yaptırmak için bunun %10'unu ödüyor. Ne kadar ödedi?",
+    "ground_truth": "1430",
+    "raw_output": "Janet'in toplam ödemesini hesaplamak için her bir maliyeti ayrı ayrı toplayalım:\n\n1.  **Malzeme maliyeti:** 500 dolar\n2.  **Kuyumcu maliyeti:** 800 dolar\n3.  **Sigorta maliyeti:** Bu, toplam malzeme ve kuyumcu maliyetinin %10'udur.\n    *   Toplam maliyet = 500 + 800 = 1300 dolar\n    *   Sigorta maliyeti = 1300 * 0.10 = 130 dolar\n\nŞimdi tüm maliyetleri toplayarak toplam ödemesini bulabiliriz:\n*   Toplam ödeme = Malzeme + Kuyumcu + Sigorta\n*   Toplam ödeme = 500 + 800 + 130 = 1430 dolar\n\n#### 1430",
+    "extracted": "1430",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 61,
+    "question": "Marcy aynı şirkette 40 yıl çalışırsa yıllık 50.000$ emekli maaşı alıyor. 20 yıldan sonra her yıl emekli maaşının değerinin %5'ini almaya hak kazanır. 30 yıl sonra istifa ederse yıllık emekli maaşı ne kadar olacak?",
+    "ground_truth": "25000",
+    "raw_output": "Marcy'nin emekli maaşının artışı, 20 yıl sonra başlar ve her yıl %5 oranında artar. Bu, bir bileşik artış (compound interest) problemini oluşturur.\n\n1.  **Başlangıç Noktası:** Marcy 20 yıl çalıştıktan sonra, emekli maaşının ilk artışı gerçekleşir.\n    *   İlk artış sonrası maaş: 50.000$ * (1 + 0.05) = 50.000$ * 1.05 = 52.500$\n\n2.  **İstifa Zamanı:** Marcy 30 yıl çalıştıktan sonra istifa eder. Bu, 20 yıllık çalışma süresinden sonra 10 yıl daha demektir.\n    *   Bu 10 yıl boyunca, maaş %5 oranında artmaya devam eder.\n    *   Artış sayısı: 30 yıl - 20 yıl = 10 yıl.\n\n3.  **Son Hesaplama:** İlk artış sonrası maaşın (52.500$) 10 yıl boyunca %5 oranında artmasını hesaplayalım.\n    *   Son maaş = 52.500$ * (1.05)^10\n    *   (1.05)^10 ≈ 1.62889\n    *   Son maaş ≈ 52.500$ * 1.62889 ≈ 85.516.925$\n\n#### 85517",
+    "extracted": "85517",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 62,
+    "question": "Aleena, kendisinden ayda 140 dolar ücret alan bir yayın hizmetine abone oldu. Yayın şirketi ondan yılın ilk yarısında başlangıç ​​tutarını tahsil ettiyse ve yılın diğer yarısında ondan %10 daha az ücret talep ettiyse, yıl sonuna kadar yayın hizmeti için ödediği toplam tutarı hesaplayın.",
+    "ground_truth": "1596",
+    "raw_output": "Öncelikle yılın ilk yarısında ödenen tutarı bulalım. Yılın ilk yarısı 6 aydır ve her ay 140 dolar ücret alınmaktadır:\n6 ay × 140 dolar/ay = 840 dolar\n\nYılın ikinci yarısında ise ilk yarıya göre %10 daha az ücret alınmaktadır. İlk yarıdaki ücretin %10'u:\n140 dolar × 0,10 = 14 dolar\n\nYılın ikinci yarısındaki yeni ücret:\n140 dolar - 14 dolar = 126 dolar\n\nYılın ikinci yarısı da 6 aydır, bu yüzden ikinci yarıda ödenen toplam tutar:\n6 ay × 126 dolar/ay = 756 dolar\n\nYıl sonuna kadar ödenen toplam tutar, iki yarıyı toplayarak buluruz:\n840 dolar + 756 dolar = 1596 dolar\n\n#### 1596",
+    "extracted": "1596",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 63,
+    "question": "Sophia arabasıyla bir yolculuğa çıkmayı düşünüyor ve tek depo benzinle ne kadar yol gidebileceğini bilmek istiyor. Deposunu son doldurduğundan bu yana 100 mil yol kat etti ve tekrar doldurmak için 4 galon benzin koyması gerekiyordu. Arabasının kullanım kılavuzunda, deposunda 12 galon benzin olduğu yazıyor. Sophia tek bir depo benzinle kaç kilometre yol kat edebilir?",
+    "ground_truth": "300",
+    "raw_output": "Bu soruyu çözmek için önce Sophia'nın bir depo benzinle ne kadar yol kat edebileceğini bulmalı, ardından bu sonucu milimden kilometreye çevirmeliyiz.\n\n1.  **Bir depo benzinle kat edilen yolu mil cinsinden bulma:**\n    *   100 mil yol kat edip 4 galon benzin koyması gerekiyordu.\n    *   Bu, 4 galon benzinin 100 mil yol kat etmesini sağladığı anlamına gelir.\n    *   Bir depo benzin 12 galondur.\n    *   Dolayısıyla, bir depo benzinle kat edilen yol: (100 mil / 4 galon) * 12 galon = 25 mil/galon * 12 galon = **300 mil**.\n\n2.  **Sonucu milimden kilometreye çevirme:**\n    *   1 mil yaklaşık olarak 1.60934 kilometre eder.\n    *   300 mil * 1.60934 km/mil ≈ **482.8 km**.\n\n#### 482.8",
+    "extracted": "482.8",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 64,
+    "question": "Jim 2 saatini televizyon izleyerek geçiriyor ve sonra yatmaya karar veriyor ve yarısı kadar kitap okuyor. Bunu haftada 3 kez yapıyor. 4 haftada kaç saatini televizyon karşısında ve kitap okuyarak geçiriyor?",
+    "ground_truth": "36",
+    "raw_output": "Önce Jim'in bir hafta boyunca televizyon karşısında ve kitap okuyarak geçirdiği toplam süreyi bulalım.\n\n1.  **Televizyon izleme süresi:** Jim her hafta 2 saat televizyon izliyor.\n2.  **Kitap okuma süresi:** Jim her hafta televizyon izleme süresinin yarısı kadar kitap okuyor.\n    *   Kitap okuma süresi = 2 saat / 2 = 1 saat.\n3.  **Bir haftadaki toplam süre:** Televizyon izleme süresi + Kitap okuma süresi\n    *   Toplam = 2 saat + 1 saat = 3 saat.\n\nBu süre haftada 3 kez tekrarlanır. Bu durumda bir haftadaki toplam süre 3 saat x 3 = 9 saattir.\n\nSon olarak, bu sürenin 4 haftada ne kadar olacağını bulalım:\n*   4 haftadaki toplam süre = 9 saat/hafta x 4 hafta = 36 saat.\n\n#### 36",
+    "extracted": "36",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 65,
+    "question": "Basketbol turnuvasında dört okul yarışıyor. Her okul bir kız basketbol takımı ve bir erkek basketbol takımı göndermiştir ve her takımda 5 oyuncu bulunmaktadır. Ayrıca her okul, her takıma bir antrenör göndermiştir. Tüm okullara toplam kaç kişi gönderildi?",
+    "ground_truth": "48",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Her okulda toplam kaç kişi olduğunu bulalım:**\n    *   Her okul 2 takım gönderiyor (1 kız takımı + 1 erkek takımı).\n    *   Her takımda 5 oyuncu var.\n    *   Her okulda toplam oyuncu sayısı: 2 takım × 5 oyuncu/takım = 10 oyuncu.\n    *   Her okulda ayrıca 1 antrenör de var.\n    *   Bir okulda toplam kişi sayısı: 10 oyuncu + 1 antrenör = 11 kişi.\n\n2.  **Tüm okullara gönderilen toplam kişi sayısını bulalım:**\n    *   Toplam 4 okul var.\n    *   Her okulda 11 kişi gönderilmiştir.\n    *   Toplam kişi sayısı: 4 okul × 11 kişi/okul = 44 kişi.\n\n#### 44",
+    "extracted": "44",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 66,
+    "question": "Bir hazine avcısı, mücevherlerle dolu gömülü bir hazine sandığı buldu. 175 elmas vardı, elmaslardan 35 daha az yakut ve yakutlardan iki kat daha fazla zümrüt vardı. Sandıkta kaç tane mücevher vardı?",
+    "ground_truth": "595",
+    "raw_output": "Öncelikle her bir mücevher türünün sayısını bulalım:\n\n1.  **Elmas:** 175 adet.\n2.  **Yakut:** Elmaslardan 35 daha az.\n    *   Yakut sayısı = 175 - 35 = 140 adet.\n3.  **Zümrüt:** Yakutlardan iki kat daha fazla.\n    *   Zümrüt sayısı = 140 * 2 = 280 adet.\n\nŞimdi sandıktaki toplam mücevher sayısını bulmak için bu sayıları toplayalım:\n*   Toplam = Elmas + Yakut + Zümrüt\n*   Toplam = 175 + 140 + 280\n*   Toplam = 595\n\n#### 595",
+    "extracted": "595",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 67,
+    "question": "Dr. Wertz'in okulunda kızların iki katı kadar erkek çocuk var. Her öğretmene 60 kız ve 5 öğrenci düşerse kaç öğretmen vardır?",
+    "ground_truth": "36",
+    "raw_output": "Soruyu çözmek için adım adım ilerleyelim:\n\n1.  **Kız Öğrenci Sayısını Bulma:** Her öğretmene 60 kız öğrencisi olduğu belirtilmiştir.\n2.  **Erkek Öğrenci Sayısını Bulma:** Kızların iki katı kadar erkek öğrenci olduğu için, erkek öğrenci sayısı 60 * 2 = 120'dir.\n3.  **Toplam Öğrenci Sayısını Bulma:** Toplam öğrenci sayısı, kız ve erkek öğrenci sayılarının toplamıdır: 60 + 120 = 180.\n4.  **Öğretmen Sayısını Bulma:** Her öğretmene 5 öğrenci düşerse, toplam öğrenci sayısına 5'i böleriz: 180 / 5 = 36.\n\n#### 36",
+    "extracted": "36",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 68,
+    "question": "Bailey belli bir miktar parayla başlıyor. Daha sonra 8 hafta boyunca haftalık 5 dolar harçlık alıyor. 8 haftanın sonunda toplam 100$'ı varsa Bailey ne kadar parayla başlamıştır?",
+    "ground_truth": "60",
+    "raw_output": "Bailey'nin toplam parasını bulmak için harcadığı parayı ve toplam parasını bilmemiz gerekir.\n\n1.  **Harcadığı Parayı Hesaplama:** Bailey haftalık 5 dolar harçlık alıyor ve bu süre 8 haftadır.\n    *   Harcadığı toplam para = Haftalık harçlık × Hafta sayısı\n    *   Harcadığı toplam para = 5 $ × 8 = 40 $\n\n2.  **Başlangıç Parasını Bulma:** Bailey'nin toplam parası 100$ iken 40$'ını harcamıştır. Başlangıç parası, harcamadan önceki toplam paradır.\n    *   Başlangıç parası = Toplam para - Harcadığı para\n    *   Başlangıç parası = 100 $ - 40 $ = 60 $\n\nBailey 60$ ile başlamıştır.\n\n#### 60",
+    "extracted": "60",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 69,
+    "question": "Judy hafta içi her gün 5, cumartesi günleri ise 8 dans dersi veriyor. Her sınıfta 15 öğrenci varsa ve öğrenci başına 15,00$ alıyorsa, 1 haftada ne kadar para kazanır?",
+    "ground_truth": "7425",
+    "raw_output": "Öncelikle Judy'nin bir haftada kaç ders verdiği ve toplamda kaç öğrenci olduğunu bulalım.\n\n1.  **Hafta içi dersler:** 5 gün x 15 öğrenci/gün = 75 öğrenci\n2.  **Cumartesi dersleri:** 1 gün x 15 öğrenci/gün = 15 öğrenci\n3.  **Toplam öğrenci sayısı:** 75 + 15 = 90 öğrenci\n\nŞimdi toplam kazancı hesaplayalım:\n*   Toplam öğrenci sayısı x Öğrenci başına kazanç\n*   90 x $15,00 = $1.350,00\n\n#### 1350",
+    "extracted": "1350",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 70,
+    "question": "Kelian'ın yemek hazırlamak için iki tarifi var; biri 20 talimat, ikincisi ise birincisinin iki katı talimat içeriyor. Kelian'ın iki yemeği hazırlamak için kaç talimat okuması gerekiyor?",
+    "ground_truth": "60",
+    "raw_output": "Öncelikle, Kelian'ın ikinci tarifin kaç talimat içerdiğini bulmalıyız. Birinci tarif 20 talimat içeriyor ve ikinci tarif birincisinin iki katıdır.\n\n*   İkinci tarifin talimat sayısı: 20 * 2 = 40 talimat.\n\nŞimdi, iki yemeği hazırlamak için toplam kaç talimat okuması gerektiğini bulabiliriz. Bu, iki tarifin talimat sayılarının toplamıdır.\n\n*   Toplam talimat sayısı: 20 (birinci tarif) + 40 (ikinci tarif) = 60 talimat.\n\n#### 60",
+    "extracted": "60",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 71,
+    "question": "Tommy, brownie'leri dilimi 3 dolara, cheesecake'leri ise dilimi 4 dolara satarak hayır kurumu için bağış topluyor. Tommy 43 brownie ve 23 dilim cheesecake satarsa ​​Tommy ne kadar para toplar?",
+    "ground_truth": "221",
+    "raw_output": "Önce her bir ürün için toplam satış gelirini hesaplayalım.\n\nBrownie'ler için:\n43 brownie × 3 dolar/brownie = 129 dolar\n\nCheesecake'ler için:\n23 cheesecake × 4 dolar/cheesecake = 92 dolar\n\nToplam topladığı parayı bulmak için bu iki tutarı toplayalım:\n129 dolar + 92 dolar = 221 dolar\n\n#### 221",
+    "extracted": "221",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 72,
+    "question": "Shiela, 3 aylık taksitle her biri 150 dolara beş cep telefonu satın aldı. Her birim için %2 faiz tahsil edilecektir. Shiela 3 ay boyunca her ay ne kadar ödeyecek?",
+    "ground_truth": "255",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Toplam Taksit Maliyetini Hesaplama:**\n    *   Her bir telefonun taksit maliyeti: 150 dolar\n    *   Telefon sayısı: 5\n    *   Toplam taksit maliyeti: 150 * 5 = 750 dolar\n\n2.  **Toplam Faiz Maliyetini Hesaplama:**\n    *   Toplam taksit maliyeti: 750 dolar\n    *   Faiz oranı: %2 (yani 0.02)\n    *   Toplam faiz maliyeti: 750 * 0.02 = 15 dolar\n\n3.  **Toplam Ödeme Miktarını Hesaplama:**\n    *   Toplam taksit maliyeti + Toplam faiz maliyeti\n    *   750 + 15 = 765 dolar\n\n4.  **Aylık Ödemeyi Hesaplama:**\n    *   Toplam ödeme: 765 dolar\n    *   Taksit sayısı: 3 ay\n    *   Aylık ödeme: 765 / 3 = 255 dolar\n\n#### 255",
+    "extracted": "255",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 73,
+    "question": "Artie'nin Çiftçi Pazarı'nda bir çiçek standı var. Üç çeşit çiçek satıyor: kadife çiçeği, petunya ve begonya. Genellikle kadife çiçeğini saksı başına 2,74 dolara, petunyaları saksı başına 1,87 dolara ve begonyaları saksı başına 2,12 dolara satıyor. Artie'nin bugün herhangi bir değişikliği yok, bu yüzden tüm fiyatlarını en yakın dolara yuvarlamaya karar verdi. Artie 12 saksı kadife çiçeği, 9 saksı petunya ve 17 saksı begonya satarsa ​​ne kadar kazanacak?",
+    "ground_truth": "88",
+    "raw_output": "Öncelikle, Artie'nin her bir çiçek türü için saksı başına ne kadar kazanacağını bulmalıyız. Bu, fiyatları en yakın dolara yuvarladığı için, önce tam fiyatları hesaplayıp sonra yuvarlamalıyız.\n\n1.  **Kadife Çiçeği:**\n    *   Tam fiyat: 2,74 $\n    *   En yakın dolara yuvarlanma: 3 $\n    *   Satılan adet: 12\n    *   Kazanç: 12 saksı × 3 $ = 36 $\n\n2.  **Petunya:**\n    *   Tam fiyat: 1,87 $\n    *   En yakın dolara yuvarlanma: 2 $\n    *   Satılan adet: 9\n    *   Kazanç: 9 saksı × 2 $ = 18 $\n\n3.  **Begonya:**\n    *   Tam fiyat: 2,12 $\n    *   En yakın dolara yuvarlanma: 2 $\n    *   Satılan adet: 17\n    *   Kazanç: 17 saksı × 2 $ = 34 $\n\nArtie'nin toplam kazancı, bu üç türden elde edilen kazançların toplamıdır:\nToplam Kazanç = 36 $ + 18 $ + 34 $ = 88 $\n\n#### 88",
+    "extracted": "88",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 74,
+    "question": "Luke kumsalda kumdan kaleler yaparak vakit geçiriyor. Sonunda, bir kumdan kalenin her seviyesinin, altındaki seviyenin yarısı kadar kare alana sahip olacağını fark eder. Eğer üst katı 16 kare kare olan 4 seviyeli bir kumdan kale yaparsa, bir seviyenin ortalama kare karesi nedir?",
+    "ground_truth": "60",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Kalenin yapısı:** Kale 4 seviyeden oluşuyor. Her seviyenin, altındaki seviyenin yarısı kadar kare alana sahip olduğu belirtiliyor. Bu, bir geometrik dizilim (veya rüplü dizilim) anlamına gelir.\n2.  **Seviyelerin sıralaması:** En üst seviye 16 kare karedir. Bu, dizinin en tepesindeki seviyedir.\n3.  **Seviyelerin altındaki seviyelerin hesaplanması:**\n    *   **En üst seviye (4. seviye):** 16 kare kare.\n    *   **Birinci seviye (3. seviye):** En üst seviyenin yarısı = 16 / 2 = 8 kare kare.\n    *   **İkinci seviye (2. seviye):** Birinci seviyenin yarısı = 8 / 2 = 4 kare kare.\n    *   **Üçüncü seviye (1. seviye):** İkinci seviyenin yarısı = 4 / 2 = 2 kare kare.\n\n4.  **Tüm seviyelerin kare karelerinin toplamı:**\n    Toplam kare kare sayısı = 16 + 8 + 4 + 2 = 30.\n\n5.  **Seviyelerin sayısı:** Kale 4 seviyeden oluştuğu için, toplam seviye sayısı 4'tür.\n\n6.  **Ortalama kare kare hesabı:**\n    Ortalama = Toplam kare kare sayısı / Toplam seviye sayısı\n    Ortalama = 30 / 4 = 7.5\n\n#### 7.5",
+    "extracted": "7.5",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 75,
+    "question": "Cecilia yeni bir köpek yavrusu aldı. Veteriner hekimine göre, yavru köpeğe ilk 180 gün boyunca her gün 1 bardak köpek maması beslemesi gerekiyor. Daha sonra yavru köpeği hayatının geri kalanı boyunca her gün 2 bardak köpek maması ile beslemek zorundadır. Bir torba köpek maması 110 bardak içeriyorsa, Cecilia ilk yıl kaç torba köpek maması kullanacak?",
+    "ground_truth": "5",
+    "raw_output": "Soruyu çözmek için gerekli olan adımlar şunlardır:\n\n1.  **İlk 180 gün için gereken toplam bardak miktarını hesaplamak:**\n    *   Günlük miktar: 1 bardak\n    *   Süre: 180 gün\n    *   Toplam: 180 gün × 1 bardak/gün = 180 bardak\n\n2.  **Kalan gün sayısını bulmak:**\n    *   Bir yılın toplam günü: 365 gün\n    *   Kalan gün sayısı: 365 - 180 = 185 gün\n\n3.  **Kalan günler için gereken toplam bardak miktarını hesaplamak:**\n    *   Günlük miktar: 2 bardak\n    *   Süre: 185 gün\n    *   Toplam: 185 gün × 2 bardak/gün = 370 bardak\n\n4.  **İlk yıl boyunca gereken toplam bardak miktarını bulmak:**\n    *   Toplam: 180 bardak (ilk 180 gün) + 370 bardak (kalan günler) = 550 bardak\n\n5.  **Gerekli torba sayısını hesaplamak:**\n    *   Bir torba miktarı: 110 bardak\n    *   Gerekli torba sayısı: 550 bardak / 110 bardak/torba = 5 torba\n\n#### 5",
+    "extracted": "5",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 76,
+    "question": "Eğer Raymond, Sarah'nın yarısı kadar çamaşır yıkıyorsa ve Sarah, David'inkinin 4 katı kadar çamaşır yıkıyorsa, Sarah 400 pound çamaşır yıkıyorsa, Raymond ve David'in yıkadığı çamaşır miktarı arasındaki farkı hesaplayın.",
+    "ground_truth": "100",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Sarah'ın yıkadığı çamaşır miktarı:** 400 pound.\n2.  **David'in yıkadığı çamaşır miktarı:** Sarah, David'inkinin 4 katı kadar çamaşır yıkıyorsa, David'in yıkadığı miktarı bulmak için Sarah'ın miktarını 4'e böleriz.\n    *   David = 400 / 4 = 100 pound.\n3.  **Raymond'ın yıkadığı çamaşır miktarı:** Raymond, Sarah'nın yarısı kadar çamaşır yıkıyorsa, Sarah'ın miktarının yarısını buluruz.\n    *   Raymond = 400 / 2 = 200 pound.\n4.  **Farkı hesaplamak:** Soruda \"Raymond ve David'in yıkadığı çamaşır miktarı arasındaki fark\" isteniyor.\n    *   Fark = Raymond'ın miktarı - David'in miktarı\n    *   Fark = 200 - 100 = 100 pound.\n\n#### 100",
+    "extracted": "100",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 77,
+    "question": "Vincent çiçekleri 3'lü paketler halinde 2,50 dolara veya 2'li paketler halinde 1 dolara satın alabiliyor. 18 çiçeği daha iyi fiyata alarak ne kadar tasarruf eder?",
+    "ground_truth": "6",
+    "raw_output": "Öncelikle 18 çiçeğin her birinin maliyetini hesaplayalım.\n\n**1. 3'lü paketler halinde (2,50 dolar) alırsak:**\n*   Bir paket 3 çiçek içerir.\n*   18 çiçeği almak için gereken paket sayısı: 18 / 3 = 6 paket.\n*   Toplam maliyet: 6 paket * 2,50 dolar/paket = 15 dolar.\n\n**2. 2'li paketler halinde (1 dolar) alırsak:**\n*   Bir paket 2 çiçek içerir.\n*   18 çiçeği almak için gereken paket sayısı: 18 / 2 = 9 paket.\n*   Toplam maliyet: 9 paket * 1 dolar/paket = 9 dolar.\n\n**Tasarruf Hesabı:**\n*   Tasarruf = (3'lü paket maliyeti) - (2'li paket maliyeti)\n*   Tasarruf = 15 dolar - 9 dolar = 6 dolar.\n\n#### 6",
+    "extracted": "6",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 78,
+    "question": "John bir köpeği evlat edinir. Köpeği bakıcıya götürüyor, bu da 100 dolara mal oluyor. Bakıcı, yeni müşteri olması karşılığında ona %30 indirim teklif ediyor. Bakım ücreti ne kadar?",
+    "ground_truth": "70",
+    "raw_output": "Öncelikle, bakıcıya ödenen toplam ücretin 100 dolar olduğunu ve bu tutarın %30 indirimle verildiğini biliyoruz. Bu durumda, indirimden önceki (toplam) ücreti bulmak için 100 doları %30'ın tersine çevirmeliyiz.\n\n%30 indirim, orijinal ücretin %70'ini (100% - 30% = 70%) yansıtır. Yani, 100 dolar, orijinal ücretin %70'ine eşittir.\n\nOrijinal ücreti bulmak için 100 doları %70'e bölüyoruz:\n100 / 0.70 = 142.857...\n\nBu, indirimden önceki toplam ücrettir. Şimdi, bu toplam ücretten %30 indirim uygulanmışsa ne kaldığını bulmak için, toplam ücretin %70'ini hesaplayabiliriz:\n142.857... * 0.70 = 100 dolar.\n\nBu işlem doğru görünüyor, ancak soru \"bakım ücreti ne kadar?\" diye sorduğuna göre, bu \"bakım ücreti\"nin ne anlama geldiğini netleştirmeliyiz. Genellikle \"bakım ücreti\" terimi, hizmetin maliyetini (100 dolar) ifade eder. Ancak, indirim uygulanmış son tutar, \"son ödeme\" veya \"net maliyet\" olarak adlandırılır.\n\nSorunun mantığına göre, \"bakım ücreti\"nin 100 dolar olduğunu ve bu ücretin %30 indirimle verildiğini belirtiyor. Bu durumda, indirimden sonra John'ın ödeyeceği son tutar, orijinal \"bakım ücreti\"nin %70'ine eşittir.\n\nOrijinal ücret: 100 dolar\nİndirim oranı: %30\nKalan oran: %70\nSon ödeme: 100 * 0.70 = 70 dolar\n\n#### 70",
+    "extracted": "70",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 79,
+    "question": "İki kıza 24 litre suyun 1/6'sı verildi. Daha sonra bir çocuğa 6 litre su verildi. Kaç litre su kaldı?",
+    "ground_truth": "10",
+    "raw_output": "Önce iki kıza verilen suyun miktarını bulalım:\n24 litre suyun 1/6'sı:\n24 * (1/6) = 4 litre\n\nBu miktar iki kıza verildiği için, toplamda 2 * 4 = 8 litre su kullanılmıştır.\n\nŞimdi geriye kalan suyun miktarını bulalım:\n24 - 8 = 16 litre\n\nSon olarak, bir çocuğa 6 litre su verildiğini düşünelim:\n16 - 6 = 10 litre\n\n#### 10",
+    "extracted": "10",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 80,
+    "question": "Charlie'nin 10 çıkartması vardı. Alışveriş merkezindeki bir mağazadan 21 çıkartma aldı ve doğum günü için 23 çıkartma aldı. Daha sonra Charlie çıkartmalardan 9'unu kız kardeşine verdi ve 28'ini bir tebrik kartını süslemek için kullandı. Charlie'nin kaç çıkartması kaldı?",
+    "ground_truth": "17",
+    "raw_output": "Charlie'nin çıkartma sayısını adım adım hesaplayalım:\n\n1.  **Başlangıçtaki çıkartma sayısı:** 10\n2.  **Alışveriş merkezinden aldığı çıkartma sayısı:** 21\n3.  **Doğum günü için aldığı çıkartma sayısı:** 23\n\nBu üç sayıyı toplayarak Charlie'nin toplamda kaç çıkartması olduğunu buluruz:\n10 + 21 + 23 = 54 çıkartma\n\nŞimdi, Charlie'nin bu çıkartmalardan kaç tane kullandığını düşünelim:\n*   Kız kardeşine verdi: 9\n*   Tebrik kartı için kullandı: 28\n\nToplam kullandığı çıkartma sayısı:\n9 + 28 = 37 çıkartma\n\nSon olarak, Charlie'nin kaç çıkartması kaldığını bulmak için toplam çıkartma sayısından kullandığı sayıyı çıkarırız:\n54 - 37 = 17\n\nCharlie'nin 17 çıkartması kaldı.\n\n#### 17",
+    "extracted": "17",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 81,
+    "question": "Grace'in ağırlığı 125 kilodur. Alex, Grace'in ağırlığının 4 katından 2 kilo daha az. Bunların pound cinsinden toplam ağırlıkları nedir?",
+    "ground_truth": "623",
+    "raw_output": "Öncelikle Alex'in ağırlığını hesaplayalım. Alex, Grace'in ağırlığının 4 katından 2 kilo daha azdır.\n\nGrace'in ağırlığı 125 kg olduğuna göre:\nAlex'in ağırlığı = (125 kg × 4) - 2 kg\nAlex'in ağırlığı = 500 kg - 2 kg\nAlex'in ağırlığı = 498 kg\n\nŞimdi ikisinin de pound cinsinden ağırlıklarını bulmak için kilogramları pounda çevirmeliyiz. 1 kilogram yaklaşık 2.20462 pounda eşittir.\n\nGrace'in ağırlığı pound cinsinden:\n125 kg × 2.20462 ≈ 275.58 pound\n\nAlex'in ağırlığı pound cinsinden:\n498 kg × 2.20462 ≈ 1097.90 pound\n\nSon olarak, pound cinsinden toplam ağırlıkları bulmak için bu iki değeri toplayalım:\nToplam ağırlık = 275.58 pound + 1097.90 pound = 1373.48 pound\n\n#### 1373.48",
+    "extracted": "1373.48",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 82,
+    "question": "Dan 3 adet gül fidanı diker. Her gül fidanlığında 25 adet gül bulunmaktadır. Her gülün 8 dikeni vardır. Toplam kaç diken var?",
+    "ground_truth": "600",
+    "raw_output": "Önce toplam gül sayısını bulalım:\n3 fidan × 25 gül/fidan = 75 gül\n\nSonra toplam diken sayısını bulalım:\n75 gül × 8 diken/gül = 600 diken\n\n#### 600",
+    "extracted": "600",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 83,
+    "question": "Bir futbol takımı 22 maç oynadı. Kaybettiklerinden 8 fazlasını kazandılar. Kaç tane kazandılar?",
+    "ground_truth": "15",
+    "raw_output": "Takımın maç sayısını 22 olarak biliyoruz. Kazandıkları maç sayısını \"x\" olarak düşünelim.\n\nSoruda \"Kaybettiklerinden 8 fazlasını kazandılar\" ifadesi verilmiştir. Bu ifadeyi matematiksel olarak şu şekilde yazabiliriz:\n\nKazandıklar = Kaybedtikler + 8\n\nToplam maç sayısı ise kazandıklar ve kaybedtiklerin toplamıdır:\n\nToplam = Kazandıklar + Kaybedtikler\n22 = (Kaybedtikler + 8) + Kaybedtikler\n\nBu denklemi çözelim:\n22 = 2 * Kaybedtikler + 8\n22 - 8 = 2 * Kaybedtikler\n14 = 2 * Kaybedtikler\nKaybedtikler = 7\n\nŞimdi kazandıkları maç sayısını bulmak için bu sonucu orijinal denklemde yerine koyalım:\nKazandıklar = 7 + 8\nKazandıklar = 15\n\nTakım 15 maç kazandı.\n\n#### 15",
+    "extracted": "15",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 84,
+    "question": "Gene eski hatıra tişörtlerinden yorgan dikiyor. Gittiği her tatilden bir gömleği var. Her gömlek kendi yorgan bloğudur. Her sıra farklı bir tatil yılına ait bloklardan oluşuyor. Yılda dört tatile çıkıyor ve 23 yaşından beri tatil yapıyor. Şu an 34 yaşında. Toplamda kaç tane yorgan bloğu var?",
+    "ground_truth": "44",
+    "raw_output": "Öncelikle Gene'nin ne kadar yıl tatil yapıp yapımadığını bulalım. Şu an 34 yaşında ve 23 yaşından beri tatil yapıyor. Bu, 34 - 23 = 11 yıl tatil yaptığı anlamına gelir.\n\nHer yıl 4 tatile çıkıyor ve her tatilden bir gömlek alıyor. Bu da 11 yıl boyunca 11 * 4 = 44 gömlek aldığını gösterir.\n\nHer gömlek bir yorgan bloğudur, bu yüzden 44 gömlek 44 yorgan bloğuna eşittir.\n\n#### 44",
+    "extracted": "44",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 85,
+    "question": "Greg'in hatırlatma amacıyla günde üç kez çalacak bir alarmı var. Alarm çaldığında Greg onu kapatana kadar çalmaya devam eder. Bugün ilk kez çaldığında dört kez çaldı. İkinci kez çaldığında, ilkinden üç kat daha uzun çaldı. Üçüncü seferde, ikinci seferin yarısı kadar uzun süre çaldı. Alarm toplamda kaç kez çaldı?",
+    "ground_truth": "22",
+    "raw_output": "Alarmın toplam çalma sayısını bulmak için her seferde kaç kez çaldığını hesaplayalım:\n\n1.  **İlk sefer:** Soruda doğrudan **4** kez çaldığı belirtilmiştir.\n2.  **İkinci sefer:** İlk seferin üç katı kadar çaldı.\n    *   4 × 3 = **12** kez.\n3.  **Üçüncü sefer:** İkinci seferin yarısı kadar çaldı.\n    *   12 / 2 = **6** kez.\n\nAlarmın toplam çalma sayısını bulmak için bu üç sayıyı toplayalım:\n4 + 12 + 6 = 22\n\n#### 22",
+    "extracted": "22",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 86,
+    "question": "Bir şirket, çalışanlarının her birine ayda 600 dolar ödüyor. Şirket, her çalışanın maaşını, şirkette beş yıl kalanların her yıl başlangıç ​​maaşının %10'u oranında artırma politikasına sahiptir. Sylvie geçen Aralık ayında şirkette 5 yıl çalışmışsa, üç yıl daha hizmet verdikten sonra yıllık maaşı ne olur?",
+    "ground_truth": "9360",
+    "raw_output": "Sylvie'nin maaşını hesaplamak için verilen bilgileri adım adım kullanalım:\n\n1.  **Başlangıç Maaşı:** Sylvie'nin başlangıç maaşı 600 dolardır.\n2.  **İlk Artış (5. Yılın Sonu):** Şirket, beş yıl kalan çalışanların maaşını başlangıç maaşının %10'u kadar artırır.\n    *   Artış miktarı: 600 * 0.10 = 60 dolar.\n    *   Artıktan sonraki maaş: 600 + 60 = 660 dolar.\n3.  **İkinci Artış (8. Yılın Sonu):** Şirket, beş yıl sonra maaşları artırır. Bu artış, artıktan sonraki maaşın (660 dolar) %10'unu kapsar.\n    *   İkinci artış miktarı: 660 * 0.10 = 66 dolar.\n    *   İkinci artıktan sonraki maaş: 660 + 66 = 726 dolar.\n\nSylvie üç yıl daha çalıştığında, maaşının ikinci artıştan sonra olduğu 726 dolar seviyesinde olacaktır.\n\n#### 726",
+    "extracted": "726",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 87,
+    "question": "Marilyn'in ilk albümü Harald'ınkinden 10 kat daha fazla kopya sattı. Toplamda 88.000 kopya sattıklarına göre Harald kaç kopya sattı?",
+    "ground_truth": "8000",
+    "raw_output": "Harald'ın sattığı kopya sayısını $x$ olarak düşünelim.\n\nMarilyn'in sattığı kopya sayısı, Harald'ın sattığından 10 kat fazladır. Bu ifadeyi şu şekilde yazabiliriz:\n$10x$\n\nToplamda 88.000 kopya satılmıştır. Bu bilgiyi denklemde kullanabiliriz:\n$10x + x = 88.000$\n\nDenklemi çözelim:\n$11x = 88.000$\n\nHer iki tarafı 11'e bölersek:\n$x = 88.000 / 11$\n$x = 8.000$\n\nHarald 8.000 kopya sattı.\n\n#### 8000",
+    "extracted": "8000",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 88,
+    "question": "Christina bir doğum günü partisi planlıyor ve davetli başına 0,75 hediye paketine ihtiyacı var çünkü katılımcıların 1/4'ü partiye gelmiyor. 16 arkadaşını davet etti. Hediye çantalarının tanesi 2 dolar. Ne kadar harcayacak?",
+    "ground_truth": "24",
+    "raw_output": "Öncelikle partiye katılacak kişi sayısını bulalım. Christina 16 arkadaşını davet etmiş ve katılımcıların 1/4'ü gelmiyor. Bu, davet edilenlerin 1/4'ünün gelmediği anlamına gelir.\n\nGelmeyecek kişi sayısı: 16 * (1/4) = 4 kişi.\n\nPartiye katılacak kişi sayısı: 16 - 4 = 12 kişi.\n\nHer katılımcı için 0,75 hediye paketi gerekiyor. Toplam hediye paketi sayısı: 12 * 0,75 = 9 paket.\n\nHer paket 2 dolar olduğuna göre, toplam harcama: 9 * 2 = 18 dolar.\n\n#### 18",
+    "extracted": "18",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 89,
+    "question": "T-Rex Ted, dinozor pikniğine patates salatası getirmeyi planlıyordu. Yetişkin bir dinozorun 10 lbs patates salatası yiyeceğini ve bir çocuğun bir yetişkinin yarısı kadar yiyeceğini biliyor. Piknikte 20 yetişkin ve 5 çocuk olacaksa, Ted herkesi doyurmaya yetecek kadar patates salatası umuyorsa pikniğe kaç kilo patates salatası getirmesi gerekir?",
+    "ground_truth": "225",
+    "raw_output": "Öncelikle yetişkinlerin toplam patates salatası ihtiyacını hesaplayalım:\n20 yetişkin × 10 lbs/yetişkin = 200 lbs\n\nSonra çocukların toplam patates salatası ihtiyacını hesaplayalım. Bir çocuğun bir yetişkinin yarısı kadar yediği belirtiliyor, yani bir çocuğun 10 / 2 = 5 lbs ihtiyacı vardır:\n5 çocuk × 5 lbs/çocuk = 25 lbs\n\nTüm dinozorların toplam patates salatası ihtiyacını bulmak için bu iki miktarı toplarız:\n200 lbs + 25 lbs = 225 lbs\n\nTed, pikniğe 225 lbs patates salatası getirmesi gerekir.\n\n#### 225",
+    "extracted": "225",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 90,
+    "question": "Jan'ın Marcia'dan üç kat daha fazla evcil hayvanı var. Marcia'nın Cindy'den iki evcil hayvanı daha var. Cindy'nin dört evcil hayvanı varsa, üçünün toplam kaç evcil hayvanı vardır?",
+    "ground_truth": "28",
+    "raw_output": "Cindy'nin 4 evcil hayvanı vardır.\n\n1.  **Marcia'nın evcil hayvan sayısı:** Cindy'den 2 evcil hayvanı daha fazla olduğu için, Marcia'nın 4 + 2 = 6 evcil hayvanı vardır.\n2.  **Jan'ın evcil hayvan sayısı:** Marcia'dan 3 kat daha fazla olduğu için, Jan'ın 6 * 3 = 18 evcil hayvanı vardır.\n3.  **Toplam evcil hayvan sayısı:** Üçünün evcil hayvan sayılarını toplayalım: 4 (Cindy) + 6 (Marcia) + 18 (Jan) = 28.\n\n#### 28",
+    "extracted": "28",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 91,
+    "question": "Emily'nin Amy, Jackson, Corey ve James adında 4 çocuğu var. Amy, Jackson'dan 5 yaş büyük ve Corey'den 2 yaş küçüktür. James 10 yaşında ve Corey'den 1 yaş küçükse Jackson kaç yaşındadır?",
+    "ground_truth": "4",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **James'in yaşını bulalım:**\n    James 10 yaşında ve Corey'den 1 yaş küçüktür.\n    Bu durumda, Corey'nin yaşı = James'in yaşı + 1 = 10 + 1 = **11 yaş**.\n\n2.  **Amy'nin yaşını bulalım:**\n    Amy, Corey'den 2 yaş küçüktür.\n    Bu durumda, Amy'nin yaşı = Corey'nin yaşı - 2 = 11 - 2 = **9 yaş**.\n\n3.  **Jackson'ın yaşını bulalım:**\n    Amy, Jackson'dan 5 yaş büyük demektir. Bu ifadeyi tersine çevirirsek, Jackson, Amy'den 5 yaş küçüktür.\n    Bu durumda, Jackson'ın yaşı = Amy'nin yaşı - 5 = 9 - 5 = **4 yaş**.\n\n#### 4",
+    "extracted": "4",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 92,
+    "question": "Lee, 400 metrelik engelleri, Gerald'ın 400 metrelik engelleri koştuğundan iki saniye daha hızlı koşabiliyordu. Ancak Gerald diyetini değiştirdi ve bu da hızını %10 artırdı. Eğer Lee 400 metrelik engeli 38 saniyede koşarsa, Gerald geliştirilmiş diyetiyle 400 metrelik engeli saniyeler içinde ne kadar hızlı koşabilir?",
+    "ground_truth": "36",
+    "raw_output": "Öncelikle Lee'nin 400 metrelik engeli koşma süresini bulalım. Lee, Gerald'ın koştuğu engelden iki saniye daha hızlı koşabiliyordu ve Lee'nin süresi 38 saniye. Bu durumda Gerald'ın orijinal koşma süresi:\n38 saniye + 2 saniye = 40 saniye\n\nGerald'ın diyeti değiştiğinde hızı %10 arttı. Hız arttığında süre azalır. Hız %10 arttığında, süre %10 azalır. Gerald'ın orijinal süresi 40 saniye olduğuna göre, yeni süresi:\n40 saniye * (1 - 0.10) = 40 saniye * 0.90 = 36 saniye\n\nGerald geliştirilmiş diyetiyle 400 metrelik engeli 36 saniyede koşabilir.\n\n#### 36",
+    "extracted": "36",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 93,
+    "question": "Bir mahallede evcil tavşan sayısı, evcil köpek ve kedilerin toplam sayısından on iki eksiktir. Her köpeğe iki kedi düştüğüne ve köpek sayısı 60 olduğuna göre mahallede toplam kaç evcil hayvan vardır?",
+    "ground_truth": "348",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Köpek ve Kedi Sayısını Bulma:**\n    *   Köpek sayısı: 60\n    *   Her köpeğe 2 kedi düştüğüne göre, kedi sayısı: 60 * 2 = 120\n    *   Köpek ve kedilerin toplam sayısı: 60 + 120 = 180\n\n2.  **Tavşan Sayısını Bulma:**\n    *   Tavşan sayısı, köpek ve kedilerin toplam sayısından 12 eksiktir.\n    *   Tavşan sayısı: 180 - 12 = 168\n\n3.  **Toplam Evcil Hayvan Sayısını Bulma:**\n    *   Toplam sayı = Köpek sayısı + Kedi sayısı + Tavşan sayısı\n    *   Toplam sayı = 60 + 120 + 168 = 348\n\n#### 348",
+    "extracted": "348",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 94,
+    "question": "200 5. sınıf öğrencimizin 2/5'i erkek, kızların ise 2/3'ü kız izcidir. Kız izci takımında olmayan kaç kız var?",
+    "ground_truth": "40",
+    "raw_output": "Önce toplam öğrenci sayısını bulalım. 200 öğrencinin 2/5'i erkek ise, erkek öğrenci sayısı:\n200 * (2/5) = 80 öğrencidir.\n\nToplam öğrenci sayısından erkek öğrenci sayısını çıkararak kız öğrenci sayısını bulabiliriz:\n200 - 80 = 120 kız öğrencisi vardır.\n\nSoruda, kız öğrencilerin 2/3'ünün kız izci takımında olduğu belirtilmiştir. Bu durumda, kız izci takımında olmayan kız öğrenci sayısını bulmak için kız öğrenci sayısının geri kalan 1/3'ünü hesaplamalıyız:\n120 * (1/3) = 40\n\nKız izci takımında olmayan 40 kız öğrenci vardır.\n\n#### 40",
+    "extracted": "40",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 95,
+    "question": "Harry dün gece 9 saat uyudu. Arkadaşı James, Harry'nin uyuduğunun yalnızca 2/3'ünü uyudu. Harry James'ten kaç saat daha fazla uyudu?",
+    "ground_truth": "3",
+    "raw_output": "Harry'nin uyuduğu sürenin 2/3'ü James'in uyuduğu süredir.\n\n1.  **James'in uyuduğu süreyi bulalım:**\n    *   Harry: 9 saat\n    *   James: 9 saat × (2/3) = 6 saat\n\n2.  **Harry'nin James'ten kaç saat daha fazla uyuduğunu bulalım:**\n    *   Harry'nin uyuduğu süre - James'in uyuduğu süre\n    *   9 saat - 6 saat = 3 saat\n\nHarry, James'ten 3 saat daha fazla uyumuştur.\n\n#### 3",
+    "extracted": "3",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 96,
+    "question": "Freda konserve domatesleri sos haline getirdiğinde hacminin yarısını kaybediyor. Kullandığı her 16 onsluk domates konservesi üç domates içeriyor. Freda'nın son parti domates sosu 32 ons sos yaptı. Freda kaç tane domates kullandı?",
+    "ground_truth": "12",
+    "raw_output": "Freda'nın 32 ons sos yaptığına göre, bu sosun kaybedilmemiş kısmı 32 ons'tur.\n\nSoru, sosun hacminin yarısını kaybedildiğini belirtiyor. Bu, orijinal domateslerin yarısının sos, diğer yarısının ise kaybedildiği anlamına gelir. Dolayısıyla, kaybedilmemiş olan 32 ons sos, orijinal domateslerin yarısına eşittir.\n\nOrijinal domateslerin toplam hacmini bulmak için kaybedilmemiş kısmı ikiyle çarparız:\n32 ons × 2 = 64 ons\n\nFreda'nın kullandığı toplam domatesin hacmi 64 onstır. Her bir domates konservesi 16 onsluk olduğuna göre, kullandığı domates sayısını bulmak için toplam hacmi bir konsere hacmine böleriz:\n64 ons / 16 ons/domates = 4 domates\n\n#### 4",
+    "extracted": "4",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 97,
+    "question": "Otoyolda arabalar sıralandı. Trafik sıkışıklığının ilk 15 dakikasında araçların bir kısmı geçiyor, ardından kalan 15 dakika içinde 20 araba daha geçiyor. Hattan 5 araba trafik sıkışıklığından geçmek zorunda kalmamak için çıkışa giriyor. Başlangıçta otoyolda 30 araba varsa, ilk 15 dakikada trafik sıkışıklığından kaç araba geçti?",
+    "ground_truth": "5",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Toplam Başlangıç Sayısı:** Otoyolda başlangıçta 30 araba var.\n2.  **Toplam Geçen Araçlar:** İlk 15 dakikada \"bir kısmı\" geçiyor, ardından kalan 15 dakikada 20 araba geçiyor. Bu, toplamda 20 arabanın geçtiğini gösterir.\n3.  **Çıkışa Giren Araçlar:** Hattan 5 araba çıkışa giriyor. Bu araçlar, otoyoldan tamamen ayrıldıktan sonra çıkışa girdiği için, otoyoldaki trafik sıkışıklığından geçmek zorunda kalmayan araçlar sayılır.\n4.  **Trafik Sıkışıklığından Geçen Araçlar:** Otoyoldaki toplam araç sayısı, trafik sıkışıklığından geçen araçlar ve çıkışa giren araçların toplamıdır.\n    *   Toplam Araç = (Trafik Sıkışıklığından Geçen Araçlar) + (Çıkışa Giren Araçlar)\n    *   30 = (Trafik Sıkışıklığından Geçen Araçlar) + 5\n    *   Trafik Sıkışıklığından Geçen Araçlar = 30 - 5 = 25\n\nBu durumda, ilk 15 dakikada trafik sıkışıklığından geçen araç sayısı 25'tir.\n\n#### 25",
+    "extracted": "25",
+    "correct": false,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 98,
+    "question": "Mary hevesli bir bahçıvandır. Dün en sevdiği bitki fidanlığından 18 yeni saksı bitkisi aldı. Büyük kır evinin 40 pencere pervazının her birinde zaten 2 saksı bitkisi var. Kendini cömert hissederek yarın her çıkıntıdan 1 saksı bitkisini arkadaşlarına ve ailesine vermeye karar verdi. Mary kaç tane saksı bitkisiyle kalacak?",
+    "ground_truth": "58",
+    "raw_output": "Önce Mary'nin başlangıçta kaç saksı bitkisi olduğunu bulalım:\n*   Yeni aldıkları saksı bitkisi sayısı: 18\n*   Evinde zaten olan saksı bitkisi sayısı: 40 pencere pervazı × 2 saksı/pervaz = 80 saksı\n\nToplam saksı bitkisi sayısı: 18 + 80 = 98 saksı\n\nSonra, Mary'nin verdiklerini düşürelim:\n*   Her çıkıntıdan 1 saksı veriyor. Evinde 40 pencere pervazı var.\n*   Verdiği saksı bitkisi sayısı: 40 × 1 = 40 saksı\n\nSon olarak, kalan saksı bitkisi sayısını bulalım:\n*   Toplam saksı - Verilen saksı = 98 - 40 = 58 saksı\n\n#### 58",
+    "extracted": "58",
+    "correct": true,
+    "error": ""
+  },
+  {
+    "run_name": "tuzak-2k",
+    "idx": 99,
+    "question": "Jerome'un belirli bir günde onu ziyarete gelen 4 arkadaşı vardı. İlk arkadaş, Jerome açılmadan önce kapı ziline 20 kez bastı, ikinci arkadaş ise Jerome'un ilk arkadaşına göre kapı ziline 1/4 kat daha fazla bastı. Üçüncü arkadaş dördüncü arkadaşa göre kapı ziline 10 kat daha fazla basmıştır. Dördüncü arkadaş kapı ziline 60 kez basarsa kapı zili kaç kez çalmıştır?",
+    "ground_truth": "175",
+    "raw_output": "Soruyu adım adım çözelim:\n\n1.  **Dördüncü arkadaşın zili:** 60 kez.\n2.  **Üçüncü arkadaşın zili:** Dördüncü arkadaşa göre 10 kat daha fazla basmıştır.\n    *   $60 \\times 10 = 600$ kez.\n3.  **İkinci arkadaşın zili:** İlk arkadaşa göre 1/4 kat daha fazla basmıştır. Bu ifade, \"ilk arkadaşın zili + (ilk arkadaşın zili * 1/4)\" anlamına gelir.\n    *   $600 + (600 \\times \\frac{1}{4}) = 600 + 150 = 750$ kez.\n4.  **İlk arkadaşın zili:** İkinci arkadaşın zili, onun 1/4 katı daha fazladır. Yani ikinci arkadaşın zili, ilk arkadaşın zili + (ilk arkadaşın zili * 1/4) şeklinde ifade edilmiştir. Bu ifadeyi tersine çevirirsek:\n    *   İkinci arkadaşın zili = $750$.\n    *   Bu, $X + \\frac{1}{4}X = \\frac{5}{4}X$ formundadır (burada X ilk arkadaşın zili).\n    *   $\\frac{5}{4}X = 750$\n    *   $X = 750 \\times \\frac{4}{5}$\n    *   $X = 600$ kez.\n\nKapı zili toplamı:\n$60 + 600 + 750 + 600 = 2010$ kez.\n\n#### 2010",
+    "extracted": "2010",
+    "correct": false,
+    "error": ""
+  }
+]
