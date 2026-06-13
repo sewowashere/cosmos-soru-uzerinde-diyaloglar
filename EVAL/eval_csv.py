@@ -68,7 +68,8 @@ files = [
     "ckpt_vanilya_test_son.json",
     "ckpt_vanilya_train_son.json",
 
-    "ckpt_model_trained_w_all_ds_test.json"
+    "ckpt_model_trained_w_all_ds_test.json",
+    "ckpt_model_trained_w_all_ds_train.json"
 ]
 
 res_list = []
