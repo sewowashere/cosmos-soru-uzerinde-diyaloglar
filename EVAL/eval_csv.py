@@ -4,18 +4,17 @@ import re
 import os
 
 def extract_answer(text):
-    # Metindeki İLK '####' işaretini ve o satırdaki (satır sonuna kadar) karakterleri yakala
-    match = re.search(r'####\s*([^\n]+)', text)
-    if match:
-        # Yakalanan değer (Örn: "6", " 16.00 ", " -14.05 ")
-        extracted_raw = match.group(1).strip()
-        
-        # Sadece rakam, eksi (-) ve virgül/nokta kalsın, geri kalan harf/boşluk vb. silinsin
-        clean_str = re.sub(r'[^\d.,-]', '', extracted_raw)
-        
-        # Virgülleri noktaya çevir ki float'a rahat dönüşsün
-        return clean_str.replace(',', '.')
-        
+    # Metni #### işaretlerine göre böleriz
+    parts = text.split('####')
+
+    if len(parts) > 1:
+        last_part = parts[-1].strip()
+
+        # Bu kısmın içindeki İLK sayısal değeri (negatif veya ondalıklı dahil) ararız
+        num = re.search(r'-?\d+(?:[.,]\d+)?', last_part)
+
+        if num:
+            return num.group(0).replace(',', '.')
     return None
 
 def clean_gt(gt):
