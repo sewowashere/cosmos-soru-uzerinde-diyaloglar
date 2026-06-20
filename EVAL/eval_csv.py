@@ -70,7 +70,8 @@ files = [
     "ckpt_model_trained_w_all_ds_test.json",
     "ckpt_model_trained_w_all_ds_train.json",
 
-    "ckpt_model_trained_w-farkli-yaklasim-2k_test.json"
+    "ckpt_model_trained_w-farkli-yaklasim-2k_test.json",
+    "ckpt_model_trained_w-farkli-yaklasim-2k_train.json"
 ]
 
 res_list = []
