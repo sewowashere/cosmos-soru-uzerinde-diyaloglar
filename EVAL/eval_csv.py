@@ -57,6 +57,7 @@ files = [
 
     "ckpt_kritik_nokta_test_son.json",
     "ckpt_kritik_nokta_train_son.json",
+    "ckpt_model_trained_w-kritik-nokta-tekrar-1k_train.json",
     
     "ckpt_on_bilgi_test_son.json",
     "ckpt_on_bilgi_train_son.json",
@@ -78,6 +79,7 @@ files = [
 
     "ckpt_model_trained_w-on-bilgi-2k_test.json",
     "ckpt_model_trained_w-on-bilgi-2k_train.json"
+
 ]
 
 res_list = []
