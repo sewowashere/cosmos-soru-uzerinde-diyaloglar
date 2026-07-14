@@ -79,7 +79,9 @@ files = [
     "ckpt_model_trained_w-kritik-nokta-2k_train.json",
 
     "ckpt_model_trained_w-on-bilgi-2k_test.json",
-    "ckpt_model_trained_w-on-bilgi-2k_train.json"
+    "ckpt_model_trained_w-on-bilgi-2k_train.json",
+
+    "ckpt_model_trained_exp-top2_tuzak75-kritik25_test.json"
 
 ]
 
