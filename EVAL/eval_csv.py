@@ -81,7 +81,13 @@ files = [
     "ckpt_model_trained_w-on-bilgi-2k_test.json",
     "ckpt_model_trained_w-on-bilgi-2k_train.json",
 
-    "ckpt_model_trained_exp-top2_tuzak75-kritik25_test.json"
+    "ckpt_model_trained_exp-top2_tuzak75-kritik25_test.json",
+    "ckpt_top2_tuzak25-kritik75_test.json",
+    "ckpt_top2_tuzak50-kritik50_test.json",
+    "ckpt_top3_equal_667-667-666fy_test.json",
+    "ckpt_top3_acc_weighted_k-nokta-dominant_test.json",
+    "ckpt_top3_acc_weighted_farkli-y-dominant_test.json",
+    "ckpt_top3_acc_weighted_tuzak-dominant_test.json"
 
 ]
 
