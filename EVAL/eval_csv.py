@@ -87,7 +87,9 @@ files = [
     "ckpt_top3_equal_667-667-666fy_test.json",
     "ckpt_top3_acc_weighted_k-nokta-dominant_test.json",
     "ckpt_top3_acc_weighted_farkli-y-dominant_test.json",
-    "ckpt_top3_acc_weighted_tuzak-dominant_test.json"
+    "ckpt_top3_acc_weighted_tuzak-dominant_test.json",
+    "ckpt_stacked_top3_5000_vanilya_test.json",
+    "ckpt_top3_5000_stacked_test.json"
 
 ]
 
