@@ -49,6 +49,52 @@ def reevaluate_file(filepath):
 
 # Dosya listesi (Yorum satırları temizlendi ve virgül hataları giderildi)
 files = [
+
+    "ckpt_qwen3_5_4b_lora_vanilla-2k_test.json",
+    "ckpt_qwen3_5_4b_lora_vanilla-2k_test-yeni.json",
+    
+    "ckpt_qwen3_5_4b_lora_vanilla-1k_test.json",    
+    "ckpt_qwen3_5_4b_lora_vanilla-1k_test-yeni.json",
+    
+    "ckpt_top2_tuzak-kritik-1000-disjoint_test.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint-yeni_test-100.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint_test-yeni.json",
+    
+    "ckpt_top2_tuzak50-kritik50_test.json",
+    "ckpt_top2_tuzak50-kritik50_test-yeni.json",
+    "ckpt_top2_tuzak50-kritik50-yeni_test2.json",
+
+    
+    "ckpt_vanilla-3k_test.json",
+    
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme1_test.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme2_test.json",    
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme3_test.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme4_test.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme5_test.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme5-1_test.json",
+    "ckpt_top2_tuzak-kritik-1000-disjoint-deneme6_test.json",
+    "ckpt_top2_tuzak50-kritik50-for-deneme5_test.json"
+    
+
+]
+
+res_list = []
+for f in files:
+    r = reevaluate_file(f)
+    if r:
+        res_list.append(r)
+
+if res_list:
+    df_eval = pd.DataFrame(res_list)
+    print("\n=== DEĞERLENDİRME SONUÇLARI ===")
+    print(df_eval.to_string(index=False))
+else:
+    print("\nHata: Belirtilen dosyaların hiçbiri dizinde bulunamadı veya okunamadı!")
+    
+    
+    
+"""
     "ckpt_farkli_yaklasim_test_son.json",
     "ckpt_farkli_yaklasim_train_son.json",
     
@@ -83,25 +129,12 @@ files = [
 
     "ckpt_model_trained_exp-top2_tuzak75-kritik25_test.json",
     "ckpt_top2_tuzak25-kritik75_test.json",
-    "ckpt_top2_tuzak50-kritik50_test.json",
+    
     "ckpt_top3_equal_667-667-666fy_test.json",
     "ckpt_top3_acc_weighted_k-nokta-dominant_test.json",
     "ckpt_top3_acc_weighted_farkli-y-dominant_test.json",
     "ckpt_top3_acc_weighted_tuzak-dominant_test.json",
     "ckpt_stacked_top3_5000_vanilya_test.json",
-    "ckpt_top3_5000_stacked_test.json"
-
-]
-
-res_list = []
-for f in files:
-    r = reevaluate_file(f)
-    if r:
-        res_list.append(r)
-
-if res_list:
-    df_eval = pd.DataFrame(res_list)
-    print("\n=== DEĞERLENDİRME SONUÇLARI ===")
-    print(df_eval.to_string(index=False))
-else:
-    print("\nHata: Belirtilen dosyaların hiçbiri dizinde bulunamadı veya okunamadı!")
+    "ckpt_top3_5000_stacked_test.json",
+    "ckpt_top2_tuzak-kritik-1000-stacked_test.json",
+"""
